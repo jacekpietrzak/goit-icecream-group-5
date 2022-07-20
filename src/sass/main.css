@@ -427,8 +427,8 @@ body {
     width: 100%;
   }
 }
-.hero-header__logo {
-  margin-top: 6px;
+.hero-header {
+  padding-top: 6px;
 }
 
 .products {
