@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button light of the site/application.
+// For media breaks look in _variables.scss
+// -----------------------------------------------------------------------------
+
+// Mobile 320-768//
+.btn-light {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-button-secondary;
+    border: 0px;
+    border-radius: 20px;
+    color: $color-brand-primary;
+    font-weight: 400;
+    min-height: 24px;
+    cursor: pointer;
+
+    padding: 7px 14.5px;
+    font-size: 8px;
+    line-height: 1.25;
+
+    &--margin-left {
+        margin-left: 8px;
+    }
+
+    &__icon {
+        fill: $color-brand-primary;
+
+        &--margin-left {
+            margin-left: 12px;
+        }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-button-secondary-hover;
+    }
+}
+
+// Tablet 768-1280//
+
+// Desktop 1280+//
+@media screen and (min-width: $desktop) {
+    .btn-light {
+        padding: 10px 22px;
+        font-size: 14px;
+        line-height: 1.285;
+        min-height: 40px;
+
+        &--margin-left {
+            margin-left: 15px;
+        }
+    }
+}

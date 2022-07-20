@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the h3 heading component.
+// For media breaks look in _variables.scss
+// -----------------------------------------------------------------------------
+
+// Mobile 480-768//
+.header-h3 {
+    font-family: $accent-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;    
+    text-transform: uppercase;
+    color: $color-brand-secondary;
+}
+
+// Tablet 768-1280//
+@media screen and (min-width: $tablet) {
+    .header-h3 {
+        font-size: 26px;
+        line-height: 1.154;
+    }
+}
+
+// Desktop 1280+//
+@media screen and (min-width: $desktop) {
+    .header-h3 {
+        font-size: 30px;
+        line-height: 1.134;
+        letter-spacing: 0.04em;
+    }
+}
