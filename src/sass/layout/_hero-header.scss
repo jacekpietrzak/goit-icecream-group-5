@@ -7,9 +7,18 @@
 // Mobile 320-768//
 .hero-header {
     padding-top: 6px;
+    z-index: 999;
 
     &__logo {
         margin-bottom: 137px;
+    }
+
+    &__header {
+        width: 218px;
+    }
+
+    &__buttons {
+        margin-top: 19px;
     }
 }
 
