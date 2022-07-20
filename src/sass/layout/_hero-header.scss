@@ -5,7 +5,10 @@
 
 // Mobile 320-768//
 .hero-header {
-    height: 200px // To remove
+
+    &__logo {
+        margin-top: 6px;
+    }
 }
 
 // Tablet 768-1280//
