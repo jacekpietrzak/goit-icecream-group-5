@@ -3,13 +3,91 @@
 // For media breaks look in _variables.scss
 // -----------------------------------------------------------------------------
 
+// Hero background img 1x
+$review-thumb-bg-img: url('../images/customer-reviews/testimonials1@1x-85x85.jpg');
+
+// Hero background img 2x
+$review-thumb-bg-img-2x: url('../images/customer-reviews/testimonials1@2x-170x170.jpg');
+
 // Mobile 320-768//
 .reviews {
-    height: 200px // To remove
+    padding-top: 123px;
+    padding-bottom: 234px;
+
+    &__testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text-box {
+        background-color: $color-reviews-bg;
+        padding: 47px 89px 39px 87px;
+    }
+
+    &__thumb {
+        width: 85px;
+        height: 85px;
+        margin-bottom: 29px;
+        background-image: $review-thumb-bg-img;
+
+        @include retina {
+            background-image: $review-thumb-bg-img-2x;
+        }
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__text {
+        font-family: $text-font-stack;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.875;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
 }
 
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {}
 
 // Desktop 1280+//
-@media screen and (min-width: $desktop) {}
+@media screen and (min-width: $desktop) {
+    .reviews {
+        padding-top: 123px;
+        padding-bottom: 234px;
+
+        &__testimonials {
+            padding: 0 62px;
+        }
+
+        &__text-box {
+            background-color: $color-reviews-bg;
+            padding: 47px 89px 39px 87px;
+        }
+
+        &__thumb {
+            width: 85px;
+            height: 85px;
+            margin-bottom: 15px;
+            background-image: $review-thumb-bg-img;
+
+            @include retina {
+                background-image: $review-thumb-bg-img-2x;
+            }
+        }
+
+        &__text {
+            font-family: $text-font-stack;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.875;
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
+    }
+}
