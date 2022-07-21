@@ -47,6 +47,12 @@
         text-align: center;
         border-radius: 22px;
         padding: 0;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $color-button-secondary-hover;
+        }
     }
 
     &--margin-left {

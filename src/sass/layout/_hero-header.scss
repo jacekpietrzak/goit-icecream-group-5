@@ -31,20 +31,30 @@
 
     &__ice-cream {
         z-index: 996;
-        top: 92px;
-        left: 117px;
+        top: 16.5%;
+        left: 36.5%;
         position: absolute;
+        
     }
 
     &__ellipse {
         z-index: 995;
-        max-width: 346px;
-        max-height: 344px;
+        width: 324px;
+        height: 322px;
         border-radius: 50%;
         background-color: $color-brand-secondary;
         position: absolute;
-        left: 36px;
-        top: 83px;
+        left: 40%;
+        top: 7.7%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-header {
+
+        &__ellipse {
+            display: none;
+        }
     }
 }
 
@@ -59,19 +69,14 @@
         }
 
         &__buttons {
-            top: 64px;
+            top: 39%;
         }
 
         &__ice-cream {
-            left: 378px;
-            top: 63px;
-        }
-
-        &__ellipse {
-            width: 324px;
-            height: 322px;
-            left: 307px;
-            top: 31px;
+            width: 143px;
+            height: 336px;
+            left: 49.2%;
+            top: 15.7%;
         }
     }
 }
