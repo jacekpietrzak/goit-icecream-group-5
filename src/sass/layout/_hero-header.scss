@@ -56,6 +56,14 @@
             display: none;
         }
     }
+
+    .so-tasty {
+        display: none;
+    }
+
+    .milk {
+        display: none;
+    }
 }
 
 // Tablet 768-1280//
@@ -78,6 +86,20 @@
             left: 49.2%;
             top: 15.7%;
         }
+    }
+
+    .so-tasty {
+        position: absolute;
+        z-index: 999;
+        left: 73.7%;
+        top: 66.6%;
+    }
+
+    .milk {
+        position: absolute;
+        z-index: 999;
+        left: 4.4%;
+        top: 61.5%;
     }
 }
 
