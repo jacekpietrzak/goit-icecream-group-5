@@ -49,7 +49,32 @@
 }
 
 // Tablet 768-1280//
-@media screen and (min-width: $tablet) {}
+@media screen and (min-width: $tablet) {
+    .hero-header {
+        padding-top: 37px;
+
+        &__header {
+            width: 162px;
+            top: 65px;
+        }
+
+        &__buttons {
+            top: 64px;
+        }
+
+        &__ice-cream {
+            left: 378px;
+            top: 63px;
+        }
+
+        &__ellipse {
+            width: 324px;
+            height: 322px;
+            left: 307px;
+            top: 31px;
+        }
+    }
+}
 
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {}

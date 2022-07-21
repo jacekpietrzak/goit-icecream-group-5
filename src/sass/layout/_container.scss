@@ -30,6 +30,10 @@
         padding-left: $container-padding-tablet;
         padding-right: $container-padding-tablet;
         width: 100%;
+
+        &--bg-secondary {
+            height: 399px;
+        }
     }
 }
 
