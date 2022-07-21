@@ -26,9 +26,6 @@ a {
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
 }
 
 .nav-branding {
@@ -81,12 +78,12 @@ a {
         left: -100%;
         top: 0;
         flex-direction: column;
-        justify-content: center;
         background-color: $color-bg-mobile-menu;
         text-align: center;
         transition: 0.3s;
         width: 100vw;
         height: 100vh;
+        padding-top: 60px;
     }
     .nav-item {
         margin: 16px 0;
@@ -95,4 +92,8 @@ a {
     .nav-menu.active {
         left: 0;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    
 }

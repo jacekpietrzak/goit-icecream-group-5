@@ -32,6 +32,18 @@
         }
     }
 
+    &--hamburger {
+        width: 209px;
+        height: 44px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        padding: 0;
+    }
+
     &:hover,
     &:active,
     &:focus {
