@@ -670,6 +670,9 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+.header-h1--hidden {
+  display: none;
+}
 .header-h1--accent {
   font-size: 48px;
   line-height: 0.95;
@@ -708,6 +711,9 @@ body {
   text-transform: uppercase;
   color: #D41443;
 }
+.header-h2--hidden {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .header-h2 {
@@ -730,6 +736,9 @@ body {
   line-height: 1.17;
   text-transform: uppercase;
   color: #FFA5BA;
+}
+.header-h3--hidden {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
