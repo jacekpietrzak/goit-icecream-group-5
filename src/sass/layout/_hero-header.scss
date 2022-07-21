@@ -38,8 +38,8 @@
 
     &__ellipse {
         z-index: 995;
-        width: 346px;
-        height: 344px;
+        max-width: 346px;
+        max-height: 344px;
         border-radius: 50%;
         background-color: $color-brand-secondary;
         position: absolute;
