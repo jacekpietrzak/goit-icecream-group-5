@@ -454,6 +454,11 @@ body {
   display: none;
 }
 
+.contacts-button {
+  display: flex;
+  justify-content: center;
+}
+
 .contacts-grid {
   display: flex;
   flex-wrap: wrap;
