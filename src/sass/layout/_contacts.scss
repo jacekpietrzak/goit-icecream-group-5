@@ -1,0 +1,257 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the contacts of the site/application.
+// For media breaks look in _variables.scss
+// -----------------------------------------------------------------------------
+
+// Mobile 320-768//
+// .contacts { background-image: url('/src/images/contacts/bg-contacts-desktop-1x-1280x382.png'); }
+
+.header-hidden {
+    display: none;
+}
+
+.contacts-button {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 54px;
+
+  &__card {
+    background-color: $color-contacts-bg;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    min-width: 220px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__min-card {
+    padding: 43px 20px;
+
+    &--line {
+      content: '';
+      display: block;
+      border-top: 1px solid $color-contacts-accent-tertiary;
+      padding-top: 32px;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__branch {
+    margin-bottom: 32px;
+  }
+
+  &__branch-name {
+    color: $color-text-tertiary;
+    font-family: $text-font-stack;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 3px 33px;
+    border-radius: 6px;
+    text-transform: uppercase;
+
+    &--cafe {
+      background-color: $color-contacts-accent-primary;
+    }
+
+    &--food-truck {
+      background-color: $color-contacts-accent-secondary;
+    }
+  }
+
+  &__town {
+    font-family: $text-font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.875;
+    color: $color-text-primary;
+  }
+
+  &__description {
+    font-family: $text-font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.812;
+    color: $color-text-secondary;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__open-day {
+    font-family: $text-font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.875;
+    color: $color-text-primary;
+  }
+
+  &__open-time {
+    font-family: $text-font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.875;
+    color: $color-brand-secondary;
+  }
+
+  &__link {
+    font-family: $text-font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.812;
+    color: $color-text-secondary;
+  }
+}
+
+// Tablet 768-1280//
+@media screen and (min-width: $tablet) {
+  .contacts-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 81px;
+
+    &__card {
+      min-width: 220px;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    }
+
+    &__min-card {
+      padding: 50px 31px;
+
+      &--line {
+        padding-top: 30px;
+      }
+
+      &--margin-bottom {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__branch {
+      margin-bottom: 30px;
+    }
+
+    &__branch-name {
+      font-size: 16px;
+      padding: 3px 16px;
+    }
+
+    &__town {
+      font-size: 14px;
+      line-height: 1.857;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 1.642;
+    }
+
+    &__open-day {
+      font-size: 14px;
+      line-height: 1.857;
+    }
+
+    &__open-time {
+      font-size: 14px;
+      line-height: 1.857;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 1.857;
+    }
+  }
+}
+
+// Desktop 1280+//
+@media screen and (min-width: $desktop) {
+  .contacts-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 86px;
+
+    &__card {
+      border-radius: 24px;
+      min-width: 220px;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 31px;
+      }
+    }
+
+    &__min-card {
+      padding: 51px 43px;
+
+      &--line {
+        padding-top: 32px;
+      }
+
+      &--margin-bottom {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__branch {
+      margin-bottom: 32px;
+    }
+
+    &__branch-name {
+      color: $color-text-tertiary;
+      font-family: $text-font-stack;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      padding: 3px 16px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    &__town {
+      font-size: 16px;
+      line-height: 1.875;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 1.812;
+    }
+
+    &__list {
+      list-style-type: none;
+    }
+
+    &__open-day {
+      font-size: 16px;
+      line-height: 1.875;
+    }
+
+    &__open-time {
+      font-size: 16px;
+      line-height: 1.875;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 1.812;
+    }
+  }
+}
