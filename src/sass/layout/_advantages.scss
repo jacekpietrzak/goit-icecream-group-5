@@ -10,6 +10,7 @@
     display: none;
   }
 
+  height: 400px;
   padding-top: 125px;
   text-align: left;
   background-color: $color-bg-body-tertiary;
@@ -45,8 +46,16 @@
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
   .advantages {
+    &__list {
+      height: 222px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
     &__item {
-      width: calc(100% / 3);
+      width: 180px;
+      float: left;
     }
 
     &__number {
@@ -65,6 +74,15 @@
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {
   .advantages {
+    &__list {
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__item {
+      width: 330px;
+    }
+
     &__number {
       font-size: 58px;
       line-height: 66px;
