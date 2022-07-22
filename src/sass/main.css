@@ -432,12 +432,89 @@ body {
     width: 100%;
   }
 }
+
 .hero-header {
   padding-top: 6px;
+
 }
 
 .products {
-  height: 200px;
+  width: 100%;
+  height: 2149px;
+  align-items: center;
+}
+.products__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  flex-direction: column;
+  max-width: 320px;
+  height: 485px;
+  border: 0px;
+  list-style: none;
+  margin-bottom: 140px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.products__item--ice-cream {
+  background-color: #FFB8CA;
+}
+.products__item--ice-coffee {
+  background-color: #F0D1A5;
+}
+.products__item--shakes {
+  background-color: #C2E297;
+}
+.products__img {
+  padding-bottom: 30px;
+  margin-top: -140px;
+}
+.products__circle {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  border: 0px;
+}
+.products__circle-list {
+  display: inline-flex;
+  list-style: none;
+  width: 26px;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.products-h3 {
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.products-text {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: Bold;
+  line-height: 28px;
+  line-height: 176%;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 4%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 41px;
+  padding-top: 30px;
 }
 
 .about {
@@ -575,8 +652,95 @@ body {
   height: 200px;
 }
 
-.reviews {
-  height: 200px;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .container__products {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 34px;
+    padding-right: 34px;
+    width: 100%;
+  }
+  .products {
+    height: 969px;
+    justify-content: center;
+  }
+  .products__item {
+    width: 220px;
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .products__list {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+  }
+  .products__img {
+    width: 220px;
+    margin-top: -90px;
+  }
+  .header-h2--padding {
+    padding-bottom: 160px;
+    text-align: center;
+  }
+  .products-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 115px;
+    padding-right: 115px;
+    width: 100%;
+  }
+  .products {
+    width: 100%;
+    height: 1145px;
+    justify-content: center;
+  }
+  .products__item {
+    border-radius: 24px;
+    background-color: #FFB8CA;
+    width: 330px;
+    height: 525px;
+    border: 0px;
+    list-style: none;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .products__item--ice-cream {
+    background-color: #FFB8CA;
+  }
+  .products__item--ice-coffee {
+    background-color: #F0D1A5;
+  }
+  .products__item--shakes {
+    background-color: #C2E297;
+  }
+  .products__list {
+    justify-content: center;
+    gap: 29px;
+  }
+  .products__img {
+    width: 100%;
+    margin-top: -210px;
+  }
+  .header-h2--padding {
+    padding-bottom: 210px;
+    text-align: center;
+  }
+  .products-text {
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 62px;
+  }
+}
+.header-hidden {
+  display: none;
 }
 
 .header-hidden {
@@ -837,6 +1001,118 @@ body {
   font-size: 14px;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 81px;
+  }
+  .contacts-grid__card {
+    min-width: 220px;
+  }
+  .contacts-grid__card:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .contacts-grid__min-card {
+    padding: 50px 31px;
+  }
+  .contacts-grid__min-card--line {
+    padding-top: 30px;
+  }
+  .contacts-grid__min-card--margin-bottom {
+    margin-bottom: 30px;
+  }
+  .contacts-grid__branch {
+    margin-bottom: 30px;
+  }
+  .contacts-grid__branch-name {
+    font-size: 16px;
+    padding: 3px 16px;
+  }
+  .contacts-grid__town {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+  .contacts-grid__description {
+    font-size: 14px;
+    line-height: 1.642;
+  }
+  .contacts-grid__open-day {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+  .contacts-grid__open-time {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+  .contacts-grid__link {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 86px;
+  }
+  .contacts-grid__card {
+    border-radius: 24px;
+    min-width: 220px;
+  }
+  .contacts-grid__card:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 31px;
+  }
+  .contacts-grid__min-card {
+    padding: 51px 43px;
+  }
+  .contacts-grid__min-card--line {
+    padding-top: 32px;
+  }
+  .contacts-grid__min-card--margin-bottom {
+    margin-bottom: 32px;
+  }
+  .contacts-grid__branch {
+    margin-bottom: 32px;
+  }
+  .contacts-grid__branch-name {
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 3px 16px;
+    border-radius: 6px;
+    text-transform: uppercase;
+  }
+  .contacts-grid__town {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+  .contacts-grid__description {
+    font-size: 16px;
+    line-height: 1.812;
+  }
+  .contacts-grid__list {
+    list-style-type: none;
+  }
+  .contacts-grid__open-day {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+  .contacts-grid__open-time {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+  .contacts-grid__link {
+    font-size: 16px;
+    line-height: 1.812;
+  }
+}
 .header-h1 {
   font-family: "Titan One", cursive;
   font-style: normal;
