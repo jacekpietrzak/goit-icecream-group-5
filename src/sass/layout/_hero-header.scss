@@ -31,7 +31,7 @@
 
     &__ice-cream {
         z-index: 996;
-        top: 23%;
+        top: 92px;
         left: 36.5%;
         position: absolute;
         
@@ -45,7 +45,7 @@
         background-color: $color-brand-secondary;
         position: absolute;
         left: 40%;
-        top: 7.7%;
+        top: 31px;
     }
 }
 
@@ -75,7 +75,7 @@
 }
 
 // Tablet 768-1280//
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) and (max-width: 1279px) {
     .hero-header {
         padding-top: 37px;
 
@@ -92,7 +92,7 @@
             width: 143px;
             height: 336px;
             left: 49.2%;
-            top: 15.7%;
+            top: 63px;
         }
     }
 
@@ -100,20 +100,20 @@
         position: absolute;
         z-index: 999;
         left: 73.7%;
-        top: 66.6%;
+        top: 266px;
     }
 
     .milk {
         position: absolute;
         z-index: 999;
         left: 4.4%;
-        top: 61.5%;
+        top: 245px;
 
         &__loremipsum {
             position: absolute;
             z-index: 999;
             left: 20%;
-            top: 73.3%;
+            top: 292px;
             display: block;
             width: 114px;
             height: 48px;
@@ -130,7 +130,7 @@
         position: absolute;
         z-index: 999;
         left: 89.6%;
-        top: 23.5%;
+        top: 94px;
         text-align: end;
 
         &__text {
@@ -144,6 +144,35 @@
 
     .hero-header {
 
-        padding: 0;
+        &__logo {
+
+            left: 18.8%;
+            top: 4%;
+        }
+
+        &__header {
+            width: 277px;
+            top: 171px;
+
+        }
+
+        &__ice-cream {
+            left: 47%;
+            top: 108px;
+            width: 236px;
+            height: 557px;
+
+        }
+
+        &__ellipse {
+            width: 538px;
+            height: 538px;
+            left: 41%;
+            top: 52px;
+        }
+    }
+
+    .so-tasty {
+
     }
 }
