@@ -53,6 +53,12 @@ p {
     
 }
 
+.nav-button-icon {
+    width: 7px;
+    height: 8px;
+    margin-left: 19px;
+}
+
 .bar {
     display: block;
     width: 25px;
@@ -105,18 +111,12 @@ p {
         }
     }
 
-    .nav-button-icon {
-        width: 7px;
-        height: 8px;
-        margin-left: 19px;
-    }
-
     .nav-menu.active {
         left: 0;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     .navbar {
         left: 66.25%;
         top: 52px;
@@ -124,5 +124,13 @@ p {
 }
 
 @media screen and (min-width: 1280px) {
-    
+    .navbar {
+        position: relative;
+        left: 25%;
+        top: -130%;
+    }
+
+    .nav-item {
+        margin-left: 35px;
+    }
 }

@@ -34,6 +34,8 @@
         top: 92px;
         left: 36.5%;
         position: absolute;
+        width: 171px;
+        height: 410px;
         
     }
 
@@ -75,7 +77,7 @@
 }
 
 // Tablet 768-1280//
-@media screen and (min-width: $tablet) and (max-width: 1279px) {
+@media screen and (min-width: $tablet) and (max-width: 1278px) {
     .hero-header {
         padding-top: 37px;
 
@@ -101,6 +103,8 @@
         z-index: 999;
         left: 73.7%;
         top: 266px;
+        width: 168px;
+        height: 133px;
     }
 
     .milk {
@@ -108,6 +112,8 @@
         z-index: 999;
         left: 4.4%;
         top: 245px;
+        width: 124px;
+        height: 126px;
 
         &__loremipsum {
             position: absolute;
@@ -142,37 +148,64 @@
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {
 
-    .hero-header {
+.hero-header {
 
-        &__logo {
+    &__logo {
+        z-index: 999;
 
-            left: 18.8%;
-            top: 4%;
+    }
+
+    &__header {
+        width: 218px;
+
+    }
+
+    &__buttons {
+        margin-top: 0;
+
+    }
+
+    &__ice-cream {
+
+        
+    }
+
+    &__ellipse {
+        z-index: 995;
+        width: 324px;
+        height: 322px;
+        border-radius: 50%;
+        background-color: $color-brand-secondary;
+
+    }
+}
+
+   .so-tasty {
+
+    }
+
+    .milk {
+
+
+        &__loremipsum {
+            display: block;
+            width: 114px;
+            height: 48px;
         }
 
-        &__header {
-            width: 277px;
-            top: 171px;
-
-        }
-
-        &__ice-cream {
-            left: 47%;
-            top: 108px;
-            width: 236px;
-            height: 557px;
-
-        }
-
-        &__ellipse {
-            width: 538px;
-            height: 538px;
-            left: 41%;
-            top: 52px;
+        &__icon {
+           width: 18px;
+           height: 18px;
+           margin-top: 6px;
         }
     }
 
-    .so-tasty {
+    .hero-numbers {
+        text-align: end;
 
+        &__text {
+            margin-bottom: 13px;
+        }
     }
+
 }
