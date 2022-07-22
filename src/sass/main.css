@@ -659,6 +659,34 @@ body {
 }
 .footer {
   height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-media__tel {
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer-social-media__tel-link {
+  color: #D41443;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.rights-reserved {
+  border-top: 1px solid #E1E1E1;
+  text-align: center;
+}
+
+.rights-reserved-text {
+  color: #907E82;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .header-h1 {
