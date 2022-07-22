@@ -86,7 +86,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -427,7 +428,7 @@ body {
   }
 }
 .hero-header {
-  height: 200px;
+  padding-top: 6px;
 }
 
 .products {
