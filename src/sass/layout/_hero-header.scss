@@ -123,6 +123,10 @@
             display: block;
             width: 114px;
             height: 48px;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 150%;
+            color: $color-contacts-bg;
         }
 
         &__icon {
@@ -141,6 +145,10 @@
 
         &__text {
             margin-bottom: 13px;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 150%;
+            color: $color-contacts-bg;
         }
     }
 }
@@ -215,6 +223,8 @@
             display: block;
             width: 200px;
             height: 78px;
+            font-size: 14px;
+            line-height: 140%;
         }
 
         &__icon {
@@ -232,6 +242,8 @@
 
         &__text {
             margin-bottom: 13px;
+            font-size: 14px;
+            line-height: 18px;
         }
     }
 

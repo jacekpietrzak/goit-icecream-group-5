@@ -9,21 +9,6 @@ li {
     list-style: none;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-}
-
-p {
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 150%;
-    color: $color-contacts-bg;
-}
-
 .navbar {
     position: absolute;
     left: 76.3%;
@@ -44,6 +29,11 @@ p {
 
 .nav-link {
     transition: 0.7s ease;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
 }
 
 .nav-link:hover {
@@ -135,11 +125,6 @@ p {
 
     .nav-item {
         margin-left: 35px;
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 140%;
     }
 
     .nav-button-icon {
