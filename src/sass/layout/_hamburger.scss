@@ -126,11 +126,16 @@ p {
 @media screen and (min-width: 1280px) {
     .navbar {
         position: relative;
-        left: 25%;
-        top: -130%;
+        left: 20%;
+        top: -807%;
     }
 
     .nav-item {
         margin-left: 35px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 140%;
     }
 }
