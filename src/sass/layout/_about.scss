@@ -5,10 +5,88 @@
 
 // Mobile 320-768//
 .about {
-    height: 200px // To remove     
+  padding-top: 125px;
+  min-height: 950px;
+  text-align: center;
+  background-color: $color-bg-body-tertiary;
+
+  &__left-section {
+    width: 100%;
+    margin-top: 26px;
+  }
+
+  &__right-section {
+    width: 100%;
+    margin-top: 46px;
+  }
+
+  &__text {
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    font-family: $text-font-stack;
+    color: $color-text-secondary;
+    margin: 15px auto;
+
+    &--bold {
+      color: $color-text-primary;
+      margin: 46px auto;
+    }
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 14px;
+  }
 }
 // Tablet 768-1280//
-@media screen and (min-width: $tablet) {}
+@media screen and (min-width: $tablet) {
+  .about {
+    min-height: 750px;
+
+    &__left-section {
+      width: 50%;
+      margin-top: 50px;
+      float: left;
+    }
+
+    &__right-section {
+      width: 50%;
+      margin-top: 100px;
+      float: left;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+  }
+}
 
 // Desktop 1280+//
-@media screen and (min-width: $desktop) {}
+@media screen and (min-width: $desktop) {
+  .about {
+    min-height: 840px;
+
+    &__left-section {
+      width: 50%;
+      margin-top: 55px;
+      height: 500px;
+    }
+
+    &__right-section {
+      height: 500px;
+      margin-top: 106px;
+    }
+
+    &__text {
+      line-height: 1.94;
+      &--bold {
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+      }
+    }
+  }
+}

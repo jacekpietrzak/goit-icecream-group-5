@@ -5,11 +5,14 @@
 
 // Mobile 320-768//
 .gallery {
-    height: 200px // To remove
+  height: 300px;
+  background: linear-gradient(to bottom, $color-bg-body-tertiary, $color-bg-body-primary);
 }
 
 // Tablet 768-1280//
-@media screen and (min-width: $tablet) {}
+@media screen and (min-width: $tablet) {
+}
 
 // Desktop 1280+//
-@media screen and (min-width: $desktop) {}
+@media screen and (min-width: $desktop) {
+}
