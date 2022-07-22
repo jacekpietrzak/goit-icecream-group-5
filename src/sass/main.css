@@ -440,7 +440,6 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 .products__item {
@@ -467,6 +466,7 @@ body {
 .products__img {
   padding-bottom: 30px;
   margin-top: -140px;
+  width: 100%;
 }
 .products__circle {
   background-color: #fff;
@@ -508,6 +508,10 @@ body {
   padding-top: 30px;
 }
 
+.button-arrow {
+  margin-bottom: 40px;
+}
+
 .header-h2--padding {
   padding-bottom: 130px;
   text-align: center;
@@ -528,6 +532,9 @@ body {
   .products__item {
     width: 220px;
   }
+  .products__list {
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1280px) {
   .products {
@@ -542,6 +549,19 @@ body {
     height: 525px;
     border: 0px;
     list-style: none;
+    justify-content: space-between;
+  }
+  .products__item--ice-cream {
+    background-color: #FFB8CA;
+  }
+  .products__item--ice-coffee {
+    background-color: #F0D1A5;
+  }
+  .products__item--shakes {
+    background-color: #C2E297;
+  }
+  .products__list {
+    justify-content: space-between;
   }
 }
 .about {
