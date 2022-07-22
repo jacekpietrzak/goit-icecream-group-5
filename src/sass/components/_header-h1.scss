@@ -14,9 +14,19 @@
     text-transform: uppercase;
     color: $color-text-tertiary;
 
+    &--hidden {
+        display: none;
+    }
+
     &--accent {
         font-size: 48px;
         line-height: 0.95;
+        color: $color-brand-primary;
+    }
+
+    &--numbers {
+        font-size: 28px;
+        line-height: 1.14;
         color: $color-brand-primary;
     }
 }
@@ -45,6 +55,11 @@
         font-size: 58px;
         line-height: 0.905;
         color: $color-brand-primary;
+    }
+
+    &--numbers {
+        font-size: 46px;
+        line-height: 1.15;
     }
 }
 }

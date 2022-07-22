@@ -1,0 +1,98 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the advantages of the site/application.
+// For media breaks look in _variables.scss
+// -----------------------------------------------------------------------------
+
+// Mobile 320-768//
+.advantages {
+  & .header-h2,
+  & .header-h3 {
+    display: none;
+  }
+
+  height: 400px;
+  padding-top: 125px;
+  text-align: left;
+  background-color: $color-bg-body-tertiary;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    height: 230px;
+    width: 100%;
+  }
+
+  &__number {
+    font-family: $accent-font-stack;
+    color: $color-brand-primary;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: $text-font-stack;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    color: $color-text-primary;
+  }
+}
+
+// Tablet 768-1280//
+@media screen and (min-width: $tablet) {
+  .advantages {
+    &__list {
+      height: 222px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    &__item {
+      width: 180px;
+      float: left;
+    }
+
+    &__number {
+      font-size: 48px;
+      line-height: 55px;
+      text-transform: none;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 174%;
+    }
+  }
+}
+
+// Desktop 1280+//
+@media screen and (min-width: $desktop) {
+  .advantages {
+    &__list {
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__item {
+      width: 330px;
+    }
+
+    &__number {
+      font-size: 58px;
+      line-height: 66px;
+      text-transform: none;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 176%;
+      letter-spacing: 0.02em;
+    }
+  }
+}

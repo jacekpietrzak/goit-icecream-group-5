@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// For media breaks look in _variables.scss
+// -----------------------------------------------------------------------------
+
+// Mobile 320-768//
+.footer {
+  height: 200px; // To remove
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+.footer-social-media__tel {
+    color: $color-text-primary;
+    font-family: $text-font-stack;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer-social-media__tel-link {
+    color: $color-brand-primary;
+    font-family: $text-font-stack;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.rights-reserved {
+    border-top: 1px solid $color-footer-border-line;
+    text-align: center;
+}
+
+.rights-reserved-text {
+    color: $color-text-secondary;
+    font-family: $text-font-stack;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+// Tablet 768-1280//
+@media screen and (min-width: $tablet) {
+}
+
+// Desktop 1280+//
+@media screen and (min-width: $desktop) {
+}
