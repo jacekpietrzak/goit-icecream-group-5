@@ -12,7 +12,7 @@
         display: flex;
         align-items: center;
         list-style: none;
-        flex-direction: column;
+      
         flex-wrap: wrap;
         
     }
@@ -43,6 +43,7 @@
     &__img {
         padding-bottom: 30px;
         margin-top: -140px;
+        width: 100%;
     }
     &__circle {
         background-color: $color-text-tertiary;
@@ -83,6 +84,9 @@
     padding-top: 30px;
 
 }
+.button-arrow {
+    margin-bottom: 40px;
+}
 .header-h2 {
     &--padding {
         padding-bottom: 130px;
@@ -106,6 +110,9 @@
         &__item {
             width: 220px;
         }
+        &__list {
+            justify-content: space-between;
+        }
     }
 }
 
@@ -122,6 +129,20 @@
             height: 525px;
             border:0px;
             list-style: none;
+            justify-content: space-between;
+            &--ice-cream {
+                background-color: $color-bg-products-primary;
+               }
+               &--ice-coffee {
+                background-color: $color-bg-products-secondary;
+               }
+               &--shakes {
+                background-color: $color-bg-products-tertiary;
+               }
          }
+         &__list {
+            justify-content: space-between;
+         }
+         
     }
 }
