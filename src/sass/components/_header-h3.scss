@@ -12,6 +12,10 @@
     line-height: 1.17;    
     text-transform: uppercase;
     color: $color-brand-secondary;
+
+    &--hidden {
+        display: none;
+    }
 }
 
 // Tablet 768-1280//
