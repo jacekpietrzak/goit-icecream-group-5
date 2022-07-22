@@ -45,5 +45,9 @@
         padding-left: $container-padding-desktop;
         padding-right: $container-padding-desktop;
         width: 100%;
+
+        &--bg-secondary {
+            height: 665px;
+        }
     }
 }

@@ -140,4 +140,10 @@
 }
 
 // Desktop 1280+//
-@media screen and (min-width: $desktop) {}
+@media screen and (min-width: $desktop) {
+
+    .hero-header {
+
+        padding: 0;
+    }
+}
