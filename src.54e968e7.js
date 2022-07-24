@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/customer-reviews/testimonials1@1x-85x85.jpg":[["testimonials1@1x-85x85.e14b45a6.jpg","Qxvf"],"Qxvf"],"./../images/customer-reviews/testimonials1@2x-170x170.jpg":[["testimonials1@2x-170x170.ca39422b.jpg","Oytp"],"Oytp"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-icecream-group-5/src.e0e624ce.js.map
+//# sourceMappingURL=/goit-icecream-group-5/src.54e968e7.js.map
