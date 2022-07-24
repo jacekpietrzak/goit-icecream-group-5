@@ -23,12 +23,6 @@
         line-height: 0.95;
         color: $color-brand-primary;
     }
-
-    &--numbers {
-        font-size: 28px;
-        line-height: 1.14;
-        color: $color-brand-primary;
-    }
 }
 
 // Tablet 768-1280//
@@ -40,6 +34,14 @@
     &--accent {
         font-size: 34px;
         line-height: 0.905;
+        color: $color-brand-primary;
+    }
+
+    &--numbers {
+        position: relative;
+        z-index: 999;
+        font-size: 28px;
+        line-height: 1.14;
         color: $color-brand-primary;
     }
 }
