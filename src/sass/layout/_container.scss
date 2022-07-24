@@ -5,51 +5,89 @@
 
 // Mobile 320-768//
 .container {
-    max-width: $container-max-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: $container-padding-mobile;
-    padding-right: $container-padding-mobile;
-    width: 100%;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding-mobile;
+  padding-right: $container-padding-mobile;
+  width: 100%;
 
-    &--bg-secondary {
-        background-color: $color-bg-body-secondary;
-        height: 502px;
+  &--bg-secondary {
+    background-color: $color-bg-body-secondary;
+  }
+
+  &--bg-tertiary {
+    background-color: $color-bg-body-tertiary;
+  }
+
+  &--bg-gradient {
+    background: linear-gradient(to bottom, $color-bg-body-tertiary, $color-bg-body-primary);
+  }
+
+  &--bg-milk {
+    background-image: url('../../src/images/about/about-background-mobile-@1X-320x133.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 90%;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .container {
+    &--bg-milk {
+      background-image: url('../../src/images/about/about-background-mobile-@2X-640x266.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 90%;
     }
-
-    &--bg-tertiary {
-        background-color: $color-bg-body-tertiary;
-    }    
+  }
 }
 
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: $container-padding-tablet;
-        padding-right: $container-padding-tablet;
-        width: 100%;
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding-tablet;
+    padding-right: $container-padding-tablet;
+    width: 100%;
 
-        &--bg-secondary {
-            height: 399px;
-        }
+    &--bg-milk {
+      background-image: none;
+
     }
+  }
 }
 
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: $container-padding-desktop;
-        padding-right: $container-padding-desktop;
-        width: 100%;
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding-desktop;
+    padding-right: $container-padding-desktop;
+    width: 100%;
 
-        &--bg-secondary {
-            padding-left: 0;
-            padding-right: 0;
-            height: 665px;
-        }
+    &--bg-milk {
+      background-image: url('../../src/images/about/about-background-desktop-@1X-1280x534.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 90%;
     }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+  screen and (min-resolution: 192dpi) and (min-width: $desktop),
+  screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+  .container {
+    &--bg-milk {
+      background-image: url('../../src/images/about/about-background-desktop-@2X-2560x1068.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 90%;
+    }
+  }
 }

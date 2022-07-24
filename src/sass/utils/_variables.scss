@@ -2,8 +2,6 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
 ///=== Fonts ===///
 
 // Regular font family
@@ -12,45 +10,43 @@ $text-font-stack: 'DM Sans', sans-serif;
 // Accent font family
 $accent-font-stack: 'Titan One', cursive;
 
-
-
 ///=== Colors ===///
 
 // Brand color
-$color-brand-primary: #D41443; // Color for Main headers and accent texts
-$color-brand-secondary: #FFA5BA; // Color for Secondary headers and Hero header background circle
-$color-brand-tertiary: #FFB8CA; // Color for Header bg
+$color-brand-primary: #d41443; // Color for Main headers and accent texts
+$color-brand-secondary: #ffa5ba; // Color for Secondary headers and Hero header background circle
+$color-brand-tertiary: #ffb8ca; // Color for Header bg
 
 // Text color
 $color-text-primary: #000; // Color for dark body text
-$color-text-secondary: #907E82; // Color for lighter body text
+$color-text-secondary: #907e82; // Color for lighter body text
 $color-text-tertiary: #fff; // Color for white text
 
 // Background color global
 $color-bg-body-primary: #fff; // Background for section with white-ish sections
-$color-bg-body-secondary: #FFB8CA; // Backgorund for Hero header
-$color-bg-body-tertiary: #FFF5F6; // Background for about and contacts sections
-$color-bg-mobile-menu: #E17992; // Background for Mobile menu
+$color-bg-body-secondary: #ffb8ca; // Backgorund for Hero header
+$color-bg-body-tertiary: #fff5f6; // Background for about and contacts sections
+$color-bg-mobile-menu: #e17992; // Background for Mobile menu
 
 // Button color
 $color-button-primary: $color-brand-primary; // Background for dark button
-$color-button-primary-hover: #C7133E; // Background for dark button hover
+$color-button-primary-hover: #c7133e; // Background for dark button hover
 $color-button-secondary: #fff; // Background for light button
-$color-button-secondary-hover: #ECEBEB; // Background for light button hover
-$color-button-tertiary: #FEA5BB; // Background for Social media icon
+$color-button-secondary-hover: #ecebeb; // Background for light button hover
+$color-button-tertiary: #fea5bb; // Background for Social media icon
 $color-button-tertiary-hover: $color-brand-primary; // Background for Social media icon hover
 
-// Products 
-$color-bg-products-primary: #FFB8CA; // Background for ICE CREAM box
-$color-bg-products-secondary: #F0D1A5; // Background for ICE COFFEE box
-$color-bg-products-tertiary: #C2E297; // Background for MILKSHAKES box
+// Products
+$color-bg-products-primary: #ffb8ca; // Background for ICE CREAM box
+$color-bg-products-secondary: #f0d1a5; // Background for ICE COFFEE box
+$color-bg-products-tertiary: #c2e297; // Background for MILKSHAKES box
 
 // Customer reviews
-$color-reviews-bg: #FAFAFA; // Background for review box
-$color-reviews-accent: #E1E1E1; // lines and quotation mark
-$color-reviews-dot-primary: #C7133E; // Red dot
-$color-reviews-dot-secondary: #D9D9D9; // grey dot
-$color-reviews-icon: #D31342; // House icon
+$color-reviews-bg: #fafafa; // Background for review box
+$color-reviews-accent: #e1e1e1; // lines and quotation mark
+$color-reviews-dot-primary: #c7133e; // Red dot
+$color-reviews-dot-secondary: #d9d9d9; // grey dot
+$color-reviews-icon: #d31342; // House icon
 
 // Contacts
 $color-contacts-accent-primary: #F0D1A5; // Background color for "CAFE" box
