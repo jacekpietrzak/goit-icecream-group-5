@@ -6,18 +6,18 @@
 // Mobile 320-768//
 .about {
   padding-top: 125px;
-  min-height: 950px;
   text-align: center;
-  background-color: $color-bg-body-tertiary;
 
   &__left-section {
     width: 100%;
+    height: 280px;
     margin-top: 26px;
   }
 
   &__right-section {
     width: 100%;
-    margin-top: 46px;
+    padding: 30px;
+    margin: 0 auto;
   }
 
   &__text {
@@ -31,7 +31,7 @@
 
     &--bold {
       color: $color-text-primary;
-      margin: 46px auto;
+      margin: 0 auto 36px auto;
     }
   }
 
@@ -43,17 +43,19 @@
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
   .about {
-    min-height: 750px;
+    height: 650px;
 
     &__left-section {
       width: 50%;
+      height: 340px;
       margin-top: 50px;
       float: left;
     }
 
     &__right-section {
+      padding: 30px 0 0 30px;
       width: 50%;
-      margin-top: 100px;
+      margin-top: 50px;
       float: left;
     }
 
@@ -72,12 +74,13 @@
     &__left-section {
       width: 50%;
       margin-top: 55px;
-      height: 500px;
+      height: 516px;
     }
 
     &__right-section {
       height: 500px;
       margin-top: 106px;
+      padding-left: 74px;
     }
 
     &__text {

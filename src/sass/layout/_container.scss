@@ -5,40 +5,44 @@
 
 // Mobile 320-768//
 .container {
-    max-width: $container-max-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: $container-padding-mobile;
-    padding-right: $container-padding-mobile;
-    width: 100%;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding-mobile;
+  padding-right: $container-padding-mobile;
+  width: 100%;
 
-    &--bg-secondary {
-        background-color: $color-bg-body-secondary;;
-    }
+  &--bg-secondary {
+    background-color: $color-bg-body-secondary;
+  }
 
-    &--bg-tertiary {
-        background-color: $color-bg-body-tertiary;
-    }    
+  &--bg-tertiary {
+    background-color: $color-bg-body-tertiary;
+  }
+
+  &--bg-gradient {
+    background: linear-gradient(to bottom, $color-bg-body-tertiary, $color-bg-body-primary);
+  }
 }
 
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: $container-padding-tablet;
-        padding-right: $container-padding-tablet;
-        width: 100%;
-    }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding-tablet;
+    padding-right: $container-padding-tablet;
+    width: 100%;
+  }
 }
 
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: $container-padding-desktop;
-        padding-right: $container-padding-desktop;
-        width: 100%;
-    }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding-desktop;
+    padding-right: $container-padding-desktop;
+    width: 100%;
+  }
 }
