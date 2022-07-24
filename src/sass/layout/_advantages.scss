@@ -5,23 +5,29 @@
 
 // Mobile 320-768//
 .advantages {
+  padding-bottom: 50px;
+
   & .header-h2,
   & .header-h3 {
     display: none;
   }
 
-  height: 400px;
-  padding-top: 125px;
+  padding-top: 40px;
   text-align: left;
-  background-color: $color-bg-body-tertiary;
 
   &__list {
+    min-width: 280px;
     list-style: none;
   }
 
   &__item {
-    height: 230px;
-    width: 100%;
+    margin: 0 auto;
+    height: 156px;
+    width: 280px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 
   &__number {
@@ -32,9 +38,11 @@
     line-height: 41px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    padding: 14px 0 14px 0;
   }
 
   &__description {
+    width: 230px;
     font-family: $text-font-stack;
     font-weight: 700;
     font-size: 12px;
@@ -46,6 +54,9 @@
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
   .advantages {
+    padding-top: 0;
+    padding-bottom: 140px;
+
     &__list {
       height: 222px;
       display: flex;
@@ -55,7 +66,10 @@
 
     &__item {
       width: 180px;
-      float: left;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
 
     &__number {
