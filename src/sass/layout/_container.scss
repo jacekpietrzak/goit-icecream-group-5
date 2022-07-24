@@ -23,6 +23,26 @@
   &--bg-gradient {
     background: linear-gradient(to bottom, $color-bg-body-tertiary, $color-bg-body-primary);
   }
+
+  &--bg-milk {
+    background-image: url('../../src/images/about/about-background-mobile-@1X-320x133.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 90%;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .container {
+    &--bg-milk {
+      background-image: url('../../src/images/about/about-background-mobile-@2X-640x266.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 90%;
+    }
+  }
 }
 
 // Tablet 768-1280//
@@ -33,6 +53,10 @@
     padding-left: $container-padding-tablet;
     padding-right: $container-padding-tablet;
     width: 100%;
+
+    &--bg-milk {
+      background-image: none;
+    }
   }
 }
 
@@ -44,5 +68,25 @@
     padding-left: $container-padding-desktop;
     padding-right: $container-padding-desktop;
     width: 100%;
+
+    &--bg-milk {
+      background-image: url('../../src/images/about/about-background-desktop-@1X-1280x534.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 90%;
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+  screen and (min-resolution: 192dpi) and (min-width: $desktop),
+  screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+  .container {
+    &--bg-milk {
+      background-image: url('../../src/images/about/about-background-desktop-@2X-2560x1068.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 90%;
+    }
   }
 }
