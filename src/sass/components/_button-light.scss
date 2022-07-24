@@ -37,9 +37,28 @@
   &:focus {
     background-color: $color-button-secondary-hover;
   }
+
+  &--about {
+    padding: 10px 37px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 // Tablet 768-1280//
+
+@media screen and (min-width: $tablet) {
+  .btn-light {
+    &--about {
+      margin-top: 50px;
+      margin-right: 150px;
+      float: left;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}
 
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {
@@ -51,6 +70,11 @@
 
     &--margin-left {
       margin-left: 15px;
+    }
+
+    &--about {
+      font-size: 16px;
+      line-height: 21px;
     }
   }
 }
