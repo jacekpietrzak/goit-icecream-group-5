@@ -49,10 +49,15 @@ $color-reviews-dot-secondary: #d9d9d9; // grey dot
 $color-reviews-icon: #d31342; // House icon
 
 // Contacts
-$color-contacts-accent-primary: #f0d1a5; // Background color for "CAFE" box
-$color-contacts-accent-secondary: #c2e297; // Background color for "FOOD TRUCK" box
-$color-contacts-accent-tertiary: #e1e1e1; // Color for lines
-$color-contacts-bg: #fff; // Background for contact items
+$color-contacts-accent-primary: #F0D1A5; // Background color for "CAFE" box
+$color-contacts-accent-secondary: #C2E297; // Background color for "FOOD TRUCK" box
+$color-contacts-accent-tertiary: #E1E1E1; // Color for lines
+$color-contacts-bg: #FFF; // Background for contact items
+
+// Footer
+$color-footer-border-line: #E1E1E1;
+$color-footer-icon-primary: $color-button-tertiary;
+$color-footer-icon-secondary: $color-brand-primary;
 
 ///=== Miscellaneous ===///
 
