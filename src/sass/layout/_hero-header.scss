@@ -178,24 +178,23 @@
 .hero-header {
 
     padding-top: 37px;
-    padding-left: 46px;
 
     &__logo {
-        position: static;
-
+        position: relative;
+        left: -70px;
     }
 
     &__header {
         position: relative;
         width: 277px;
         top: 84px;
-        left: 69px;
+        left: -1px;
     }
 
     &__buttons {
         margin-top: 0;
         position: relative;
-        left: 69px;
+        left: -1px;
         top: 107px;
 
     }
@@ -205,13 +204,13 @@
         width: 236px;
         height: 557px;
         top: -166px;
-        left: 548px;
+        left: 475px;
     }
 
     &__ellipse {
         position: relative;
         top: -480%;
-        left: 435px;
+        left: 365px;
         width: 538px;
         height: 538px;
         border-radius: 50%;
@@ -222,7 +221,7 @@
 
    .so-tasty {
         position: relative;
-        left: 832px;
+        left: 760px;
         top: -676%;
         width: 293px;
         height: 232px;
@@ -230,14 +229,14 @@
 
     .milk {
         position: relative;
-            left: -265px;
+            left: -330px;
             top: -700%;
             width: 188px;
             height: 191px;
 
         &__loremipsum {
             position: relative;
-            left: 250px;
+            left: 185px;
             top: -784%;
             display: block;
             width: 200px;
@@ -255,7 +254,7 @@
 
     .hero-numbers {
         position: relative;
-        left: -110px;
+        left: 0;
         top: -1030%;
         text-align: end;
 
