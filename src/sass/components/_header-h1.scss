@@ -14,6 +14,9 @@
     text-transform: uppercase;
     color: $color-text-tertiary;
 
+    &--hidden {
+        display: none;
+    }
 
     &--accent {
         font-size: 48px;
