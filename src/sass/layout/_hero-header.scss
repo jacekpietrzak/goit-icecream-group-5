@@ -12,11 +12,15 @@
     }
 
     &__title-box {
+        position: relative;
+        z-index: 992;
         padding-top: 137px;
         width: 218px;
     }
 
     &__buttons {
+        position: relative;
+        z-index: 992;
         padding-top: 19px;
     }
 }
@@ -24,7 +28,18 @@
 .hero {
 
     &__background {
-        background-image: url("../images/hero-header/ice-cream-mobile-1.png");
+        position: absolute;
+        z-index: 990;
+        left: 37%;
+        top: 92px;
+    }
+
+    &__ellipse {
+        position: absolute;
+        left: 11.25%;
+        top: 83px;
+        width: 346px;
+        height: 344px;
     }
 }
 

@@ -48,5 +48,9 @@
     <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
   </symbol>
 
+  <symbol id="icon-ellipse" viewBox="0 0 32 32">
+    <path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.186 16c0 8.837-7.205 16-16.093 16s-16.093-7.163-16.093-16c0-8.837 7.205-16 16.093-16s16.093 7.163 16.093 16z"></path>
+  </symbol>
+
   </defs>
 </svg>

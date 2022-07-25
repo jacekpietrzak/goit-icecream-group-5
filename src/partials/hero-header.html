@@ -16,6 +16,20 @@
     <nav>
 
     </nav>
+  <section class="hero">
+    <picture>
+      <source srcset="./images/hero-header/ice-cream-mobile-1.png 1x, ./images/hero-header/ice-cream-mobile-2.png 2x"
+        media="(min-width: 320px) (max-width: 767px)">
+      <source srcset="./images/hero-header/ice-cream-tablet-1.png 1x, ./images/hero-header/ice-cream-tablet-2.png 2x"
+        media="(min-width: 768px) (max-width: 1279px)">
+      <source srcset="./images/hero-header/ice-cream-desktop-1.png 1x, ./images/hero-header/ice-cream-desktop-2.png 2x"
+        media="(min-width: 1280px)">
+      <img class="hero__background" src="./images/hero-header/ice-cream-mobile-1.png">
+    </picture>
+      <svg class="hero__ellipse">
+        <use href="./images/icons.svg#icon-ellipse"></use>
+      </svg>
+  </section>
   <!-- <section class="hero-header">
     <img class="hero-header__logo" src="./images/hero-header/logo-header.png">
     <div class="hero-header__header">
@@ -102,9 +116,6 @@
       <h1 class="header-h1 header-h1--numbers">23</h1>
       <p class="hero-numbers__text">food trucks</p>
     </div> -->
-  </section>
-  <section class="hero">
-    <div class="hero__background"></div>
   </section>
 </div>
 <div class="menu-container js-menu-container" id="mobile-menu">
