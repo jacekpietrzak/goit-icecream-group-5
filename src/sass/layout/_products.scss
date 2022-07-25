@@ -96,6 +96,10 @@ width: 100%;
 .button-arrow {
     margin-bottom: 40px;
 }
+.button-arrow:hover {
+ 
+    cursor: pointer;
+}
 .header-h2 {
     &--padding {
         padding-bottom: 130px;
