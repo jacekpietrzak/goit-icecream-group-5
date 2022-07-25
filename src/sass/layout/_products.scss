@@ -96,6 +96,22 @@ width: 100%;
 .button-arrow {
     margin-bottom: 40px;
 }
+.button-products:hover {
+ 
+    cursor: pointer;
+   
+}
+.button-products {
+    border-color: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/products/arrow-right4.png");
+    background-repeat: no-repeat;
+    background-color: $color-text-tertiary;
+    background-position: center;
+    
+}
 .header-h2 {
     &--padding {
         padding-bottom: 130px;
