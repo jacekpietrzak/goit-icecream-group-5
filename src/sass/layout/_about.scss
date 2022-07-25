@@ -36,7 +36,7 @@
   }
 }
 
-.backdrop {
+.about__modal {
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
@@ -90,6 +90,11 @@
     &:active {
       box-shadow: inset 1px 1px 1px $color-text-primary, 1px 1px 3px $color-text-primary;
     }
+  }
+
+  &__svg {
+    position: absolute;
+    top: 30%;
   }
 }
 
