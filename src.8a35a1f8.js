@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/about/about-background-mobile-@1X-320x133.png":[["about-background-mobile-@1X-320x133.5d272e1d.png","dg3H"],"dg3H"],"./../images/about/about-background-desktop-@2X-2560x1068.png":[["about-background-desktop-@2X-2560x1068.3b9d54aa.png","Xc8W"],"Xc8W"],"./../images/about/about-background-desktop-@1X-1280x534.png":[["about-background-desktop-@1X-1280x534.3a679442.png","iKoM"],"iKoM"],"./../images/customer-reviews/testimonials1@1x-85x85.jpg":[["testimonials1@1x-85x85.e14b45a6.jpg","Qxvf"],"Qxvf"],"./../images/customer-reviews/testimonials1@2x-170x170.jpg":[["testimonials1@2x-170x170.ca39422b.jpg","Oytp"],"Oytp"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-icecream-group-5/src.c1c51cc2.js.map
+//# sourceMappingURL=/goit-icecream-group-5/src.8a35a1f8.js.map
