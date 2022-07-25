@@ -46,6 +46,35 @@
 
 @media screen and (min-width: $tablet) {
 
+.header {
+
+    &__logo {
+        padding-top: 37px;
+    }
+
+    &__title-box {
+        padding-top: 15px;
+        width: 162px;
+    }
+}
+
+.hero {
+
+    &__background {
+        left: 49%;
+        top: 63px;
+        width: 143px;
+        height: 336px;
+    }
+
+    &__ellipse {
+        left: 40%;
+        top: 31px;
+        width: 324px;
+        height: 322px;
+    }
+}
+
 }
 
 @media screen and (min-width: $desktop) {

@@ -55,6 +55,21 @@
     transform: translateX(0);
 }
 
+
+@media screen and (min-width: $tablet) {
+
+.menu-toggle {
+
+    left: 68%;
+    top: 52px;
+
+    &__icon {
+        left: 68%;
+        top: 52px;
+    }
+}
+}
+
 ///////////////////////////---MOBILE NAVIGATION---///////////////////////////
 
 .mobile-navigation {
@@ -90,5 +105,15 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: color;
         }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .menu-toggle,
+    .menu-toggle__icon,
+    .menu-container,
+    .menu-container.is-open,
+    .mobile-navigation {
+        display: none;
     }
 }
