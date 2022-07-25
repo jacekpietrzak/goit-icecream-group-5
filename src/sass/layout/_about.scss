@@ -40,6 +40,7 @@
     font-size: 14px;
   }
 }
+
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
   .about {
@@ -66,7 +67,7 @@
   }
 }
 
-// Desktop 1280+//
+// Desktop 1280+ //
 @media screen and (min-width: $desktop) {
   .about {
     min-height: 840px;
@@ -84,7 +85,7 @@
     }
 
     &__text {
-      line-height: 1.94;
+      line-height: 1.93;
       &--bold {
         font-size: 16px;
         line-height: 1.76;
