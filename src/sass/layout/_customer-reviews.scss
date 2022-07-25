@@ -24,9 +24,9 @@ $review-thumb-bg-img-2x: url('../images/customer-reviews/testimonials1@2x-170x17
         width: 85px;
         height: 85px;
         margin-bottom: 29px;
-        background-image: $review-thumb-bg-img;
         border-radius: 50%;
-
+        
+        background-image: $review-thumb-bg-img;
         @include retina {
             background-image: $review-thumb-bg-img-2x;
         }
@@ -55,7 +55,7 @@ $review-thumb-bg-img-2x: url('../images/customer-reviews/testimonials1@2x-170x17
         z-index: 1;
         background: repeating-linear-gradient(
             transparent, transparent 30px, $color-reviews-accent 30px, $color-reviews-accent 31px
-            );
+            );            
         font-family: $text-font-stack;
         font-style: normal;
         font-weight: 500;
@@ -146,6 +146,10 @@ $review-thumb-bg-img-2x: url('../images/customer-reviews/testimonials1@2x-170x17
     .reviews {
         padding-top: 121px;
         padding-bottom: 197px;
+
+        &__testimonial {
+            padding: 0 40px;
+        }
 
         &__text-box {
             padding: 47px 80px 34px 80px;
