@@ -13,6 +13,10 @@
 .contacts-button {
     display: flex;
     justify-content: center;
+
+    &--padding-bottom {
+      padding-bottom: 113px;
+    }
 }
 
 .contacts-grid {
@@ -117,6 +121,13 @@
 
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
+  .contacts-button {
+
+    &--padding-bottom {
+      padding-bottom: 165px;
+    }
+  }
+
   .contacts-grid {
     display: flex;
     flex-wrap: nowrap;
