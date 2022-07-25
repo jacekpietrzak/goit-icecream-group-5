@@ -3,21 +3,26 @@
 // For media breaks look in _variables.scss
 // -----------------------------------------------------------------------------
 
+
+
 // Mobile 320-768//
 .about {
   padding-top: 125px;
-  min-height: 950px;
   text-align: center;
-  background-color: $color-bg-body-tertiary;
+
+  &__image {
+    display: block;
+    max-width: 100%;
+  }
 
   &__left-section {
     width: 100%;
-    margin-top: 26px;
+    margin-bottom: 46px;
   }
 
   &__right-section {
     width: 100%;
-    margin-top: 46px;
+    padding: 0 30px;
   }
 
   &__text {
@@ -27,11 +32,11 @@
     line-height: 1.62;
     font-family: $text-font-stack;
     color: $color-text-secondary;
-    margin: 15px auto;
+    margin-bottom: 15px;
 
     &--bold {
       color: $color-text-primary;
-      margin: 46px auto;
+      margin-bottom: 30px;
     }
   }
 
@@ -43,17 +48,18 @@
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
   .about {
-    min-height: 750px;
+    padding-top: 130px;
+    padding-bottom: 66px;
 
     &__left-section {
       width: 50%;
-      margin-top: 50px;
+      padding-top: 50px;
       float: left;
     }
 
     &__right-section {
       width: 50%;
-      margin-top: 100px;
+      padding-top: 100px;
       float: left;
     }
 
@@ -67,17 +73,17 @@
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {
   .about {
-    min-height: 840px;
+    padding-bottom: 40px;
 
     &__left-section {
       width: 50%;
-      margin-top: 55px;
-      height: 500px;
+      padding-top: 55px;
+      min-height: 500px;
     }
 
     &__right-section {
-      height: 500px;
-      margin-top: 106px;
+      min-height: 500px;
+      padding-top: 106px;
     }
 
     &__text {
