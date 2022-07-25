@@ -21,6 +21,13 @@
     }
 }
 
+.hero {
+
+    &__background {
+        background-image: url("../images/hero-header/ice-cream-mobile-1.png");
+    }
+}
+
 
 @media screen and (min-width: $tablet) {
 
