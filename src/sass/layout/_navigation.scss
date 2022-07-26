@@ -76,6 +76,7 @@
 
     display: flex;
     flex-direction: column;
+    list-style: none;
 
     &__item {
         font-style: normal;
@@ -94,6 +95,7 @@
     &__link {
 
         color: $color-text-tertiary;
+        text-decoration: none;
 
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,6 +143,7 @@
 
         &__list {
             display: flex;
+            list-style: none;
         }
 
         &__item {
@@ -156,6 +159,7 @@
         &__link {
 
             color: $color-text-tertiary;
+            text-decoration: none;
 
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
