@@ -119,3 +119,58 @@
         display: none;
     }
 }
+
+///////////////////////////---MAIN NAVIGATION---//////////////////////////////
+
+@media screen and (max-width: 1279px) {
+
+    .main-navigation {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+
+    .main-navigation {
+
+        position: relative;
+        z-index: 990;
+        left: 240px;
+        top: -37px;
+        width: 541px;
+
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+
+        &__link {
+
+            color: $color-text-tertiary;
+
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: color;
+
+            &:hover,
+            &:focus {
+            color: $color-button-primary-hover;
+            cursor: pointer;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: color;
+            }
+        }
+
+        
+    }
+}

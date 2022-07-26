@@ -38,6 +38,7 @@
 
     &__ellipse {
         position: absolute;
+        z-index: 989;
         left: 11.25%;
         top: 83px;
         width: 346px;
@@ -103,6 +104,7 @@
     &__so-tasty {
         display: block;
         position: absolute;
+        z-index: 990;
         left: 74%;
         top: 266px;
         width: 168px;
@@ -154,14 +156,13 @@
         z-index: 992;
         width: 16px;
         height: 16px;
+        left: 25px;
 
         &--first {
-            left: 25px;
             top: -2px;
         }
 
         &--second {
-            left: 25px;
             top: 48px;
         }
     }
@@ -170,7 +171,84 @@
 }
 
 @media screen and (min-width: $desktop) {
+
+    .header {
+
+        &__logo {
+            margin-left: -69px;
+        }
+
+        &__title-box {
+            width: 277px;
+            height: 137px;
+            margin-top: 54px;
+        }
+
+        &__buttons {
+            margin-top: 25px;
+        }
+    }
     
+    .hero {
+
+        &__background {
+            width: 236px;
+            height: 557px;
+            left: 594px;
+            top: 108px;
+        }
+
+        &__ellipse {
+            width: 538px;
+            height: 538px;
+            left: 475px;
+            top: 52px;
+        }
+
+        &__so-tasty {
+            width: 293px;
+            height: 232px;
+            left: 878px;
+            top: 433px;
+        }
+
+        &__milk {
+            width: 188px;
+            height: 191px;
+            left: 77px;
+            top: 429px;
+        }
+
+        &__milk-description {
+            width: 200px;
+            height: 78px;
+            margin-top: 110px;
+        }
+
+        &__milk-button {
+            margin-top: 12px;
+        }
+
+        &__number-box {
+            left: 1111px;
+            top: 156px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 140%;
+        }
+
+        &__number-circle {
+            width: 30px;
+            height: 30px;
+            left: 43px;
+
+            &--second {
+                top: 76px;
+            }
+        }
+    }
 }
 
 // STARA WERSJA //////////////////////////////////////////////////////////////////

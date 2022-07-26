@@ -106,10 +106,6 @@
       font-size: 16px;
       line-height: 21px;
     }
-
-    &--hamburger {
-      margin-left: 10%;
-    }
   }
 }
 
@@ -125,25 +121,14 @@
       margin-left: 15px;
     }
 
-    &--hamburger {
-      position: relative;
-      left: 830px;
-      top: -12.5px;
-      width: 159px;
-      height: 44px;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.3;
-    }
-
-    &__hero {
-      display: none;
-    }
-
     &--about {
       padding: 10px 37px;
       font-size: 16px;
       line-height: 21px;
+    }
+
+    &--hero {
+      left: 1006px;
     }
   }
 }
