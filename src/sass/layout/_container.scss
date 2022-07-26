@@ -43,6 +43,12 @@
     }
 }
 
+.overflow {
+
+    overflow-x: hidden;
+    position: relative;
+}
+
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
     .container {
