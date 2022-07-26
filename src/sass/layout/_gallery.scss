@@ -4,8 +4,10 @@
 // -----------------------------------------------------------------------------
 
 // Mobile 320-768//
-.gallery {
-  background: linear-gradient(to bottom, $color-bg-body-tertiary, $color-bg-body-primary);
+
+.img {
+  display:block;
+  max-width: 100%;
 }
 
 // Tablet 768-1280//

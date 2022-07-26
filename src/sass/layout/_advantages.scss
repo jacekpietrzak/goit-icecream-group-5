@@ -5,15 +5,14 @@
 
 // Mobile 320-768//
 .advantages {
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 97px;
+  text-align: left;
 
   & .header-h2,
   & .header-h3 {
     display: none;
   }
-
-  padding-top: 40px;
-  text-align: left;
 
   &__list {
     min-width: 280px;
@@ -42,7 +41,6 @@
   }
 
   &__description {
-    width: 230px;
     font-family: $text-font-stack;
     font-weight: 700;
     font-size: 12px;
@@ -79,6 +77,7 @@
     }
 
     &__description {
+      width: 180px;
       font-size: 14px;
       line-height: 174%;
     }
@@ -89,6 +88,7 @@
 @media screen and (min-width: $desktop) {
   .advantages {
     &__list {
+      width: 100%;
       align-items: center;
       justify-content: center;
     }
@@ -104,6 +104,7 @@
     }
 
     &__description {
+      width: 100%;
       font-size: 16px;
       line-height: 177%;
       letter-spacing: 0.02em;
