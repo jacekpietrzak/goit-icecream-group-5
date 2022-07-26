@@ -38,6 +38,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 14px 0 14px 0;
+
+    &::selection {
+      color: $color-text-tertiary;
+      background-color: $color-button-primary;
+    }
   }
 
   &__description {
@@ -46,6 +51,11 @@
     font-size: 12px;
     line-height: 170%;
     color: $color-text-primary;
+
+    &::selection {
+      color: $color-text-tertiary;
+      background-color: $color-button-primary;
+    }
   }
 }
 

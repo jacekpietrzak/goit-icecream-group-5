@@ -15,10 +15,10 @@
   font-weight: 400;
   min-height: 24px;
   cursor: pointer;
-
   padding: 7px 14.5px;
   font-size: 8px;
   line-height: 1.25;
+  transition: all 0.2s ease-in-out;
 
   &--margin-left {
     margin-left: 8px;
