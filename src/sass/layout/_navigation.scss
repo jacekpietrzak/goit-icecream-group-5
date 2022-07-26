@@ -93,13 +93,15 @@
 
     &__link {
 
+        color: $color-text-tertiary;
+
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: color;
 
         &:hover,
         &:focus {
-        color: $color-brand-primary;
+        color: $color-button-primary-hover;
         cursor: pointer;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -32,6 +32,8 @@
         z-index: 990;
         left: 37%;
         top: 92px;
+        width: 171px;
+        height: 410px;
     }
 
     &__ellipse {
@@ -40,6 +42,30 @@
         top: 83px;
         width: 346px;
         height: 344px;
+    }
+
+    &__so-tasty {
+        display: none;
+    }
+
+    &__milk {
+        display: none;
+    }
+
+    &__milk-description {
+        display: none;
+    }
+
+    &__milk-button {
+        display: none;
+    }
+
+    &__number-box {
+        display: none;
+    }
+
+    &__number-circle {
+        display: none;
     }
 }
 
@@ -72,6 +98,72 @@
         top: 31px;
         width: 324px;
         height: 322px;
+    }
+
+    &__so-tasty {
+        display: block;
+        position: absolute;
+        left: 74%;
+        top: 266px;
+        width: 168px;
+        height: 133px;
+    }
+
+    &__milk {
+        display: block;
+        position: absolute;
+        left: 3%;
+        top: 245px;
+        width: 124px;
+        height: 126px;
+    }
+
+    &__milk-description {
+        display: block;
+        width: 114px;
+        height: 48px;
+        margin-top: 66px;
+        margin-left: 15.6%;
+    }
+
+    &__milk-button {
+        display: block;
+        margin-top: 7px;
+        margin-left: 15.6%;
+    }
+
+    &__number-box {
+        display: block;
+        position: absolute;
+        left: 91%;
+        top: 94px;
+    }
+
+    &__text {
+       display: block;
+       font-weight: 400;
+       font-size: 8px;
+       line-height: 150%; 
+       color: $color-text-tertiary;
+       margin-bottom: 8px;
+    }
+
+    &__number-circle {
+        display: block;
+        position: absolute;
+        z-index: 992;
+        width: 16px;
+        height: 16px;
+
+        &--first {
+            left: 25px;
+            top: -2px;
+        }
+
+        &--second {
+            left: 25px;
+            top: 48px;
+        }
     }
 }
 

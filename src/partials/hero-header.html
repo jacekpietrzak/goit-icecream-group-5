@@ -1,4 +1,7 @@
-<div class="container container--bg-secondary">
+<div class="container container--bg-secondary" style="
+    overflow-x: hidden;
+    position: relative;
+    ">
   <section class="header">
     <img class="header__logo" src="./images/hero-header/logo-header.png">
     <div class="header__title-box">
@@ -24,11 +27,47 @@
         media="(min-width: 768px) (max-width: 1279px)">
       <source srcset="./images/hero-header/ice-cream-desktop-1.png 1x, ./images/hero-header/ice-cream-desktop-2.png 2x"
         media="(min-width: 1280px)">
-      <img class="hero__background" src="./images/hero-header/ice-cream-mobile-1.png">
+      <img class="hero__background" src="./images/hero-header/ice-cream-desktop-2.png">
     </picture>
       <svg class="hero__ellipse">
         <use href="./images/icons.svg#icon-ellipse"></use>
       </svg>
+        <picture>
+          <source srcset="./images/hero-header/so-tasty-tablet-1.png 1x, ./images/hero-header/so-tasty-tablet-2.png 2x"
+            media="(min-width: 768px) (max-width: 1279px)">
+          <source srcset="./images/hero-header/so-tasty-desktop-1.png 1x, ./images/hero-header/so-tasty-desktop-2.png 2x"
+            media="(min-width: 1280px)">
+          <img class="hero__so-tasty" src="./images/hero-header/so-tasty-desktop-2.png">
+        </picture>
+        <picture>
+          <source srcset="./images/hero-header/milk-tablet-1.png 1x, ./images/hero-header/milk-tablet-2.png 2x"
+            media="(min-width: 768px) (max-width: 1279px)">
+          <source srcset="./images/hero-header/milk-desktop-1.png 1x, ./images/hero-header/milk-desktop-2.png 2x"
+            media="(min-width: 1280px)">
+          <img class="hero__milk" src="./images/hero-header/milk-desktop-2.png">
+        </picture>
+        <div class="hero__milk-description">
+          <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        </div>
+          <button class="hero__milk-button button-products button-products--hero" type="button"></button>
+        <div class="hero__number-box">
+          <h1 class="header-h1 header-h1--numbers">16</h1>
+          <p class="hero__text hero__text--in-number-box">cafes</p>
+          <svg class="hero__number-circle hero__number-circle--first">
+            <use href="./images/icons.svg#icon-number-circle"></use>
+          </svg>
+          <h1 class="header-h1 header-h1--numbers">23</h1>
+          <p class="hero__text hero__text--in-number-box">food trucks</p>
+          <svg class="hero__number-circle hero__number-circle--second">
+            <use href="./images/icons.svg#icon-number-circle"></use>
+          </svg>
+        </div>
+      <button class="btn-light btn-light--hero" type="button">
+      Buy now
+        <svg class="btn-light__arrow">
+          <use href="images/icons.svg#icon-arrow-btn"></use>
+        </svg>
+      </button>
   </section>
   <!-- <section class="hero-header">
     <img class="hero-header__logo" src="./images/hero-header/logo-header.png">
@@ -126,22 +165,27 @@
   </button>
   <ul class="mobile-navigation">
     <li>
-    <button class="btn-light btn-light--mobile-menu" type="button">Buy now</button>
+    <button class="btn-light btn-light--mobile-menu" type="button">
+    Buy now
+      <svg class="btn-light__arrow">
+        <use href="images/icons.svg#icon-arrow-btn"></use>
+      </svg>
+    </button>
     </li>
     <li class="mobile-navigation__item mobile-navigation__item--upper-border">
       <a class="mobile-navigation__link" href="#">Home</a>
     </li>
     <li class="mobile-navigation__item">
-      <a class="link" href="#">About us</a>
+      <a class="link mobile-navigation__link" href="#">About us</a>
     </li>
     <li class="mobile-navigation__item">
-      <a class="link" href="#">How it's made?</a>
+      <a class="link mobile-navigation__link" href="#">How it's made?</a>
     </li>
     <li class="mobile-navigation__item">
-      <a class="link" href="#">Our products</a>
+      <a class="link mobile-navigation__link" href="#">Our products</a>
     </li>
     <li class="mobile-navigation__item">
-      <a class="link" href="#">Contact</a>
+      <a class="link mobile-navigation__link" href="#">Contact</a>
     </li>
   </ul>
 </div>
