@@ -2,14 +2,12 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
-
 /*
  * Set up a decent box model on the root element
  */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 /*
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -20,30 +18,51 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
 }
-
 
 /*
  * Basic styles for links
  */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*
  * All margin and padding set to 0
  */
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /*
  * Basic styles for body
  */
 body {
-    background-color: $color-bg-body-primary;
+  background-color: $color-bg-body-primary;
+}
+
+// SCROLLBAR
+
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $color-button-secondary-hover;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-bg-mobile-menu;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color-brand-primary;
 }
