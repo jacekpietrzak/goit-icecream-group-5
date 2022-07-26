@@ -127,6 +127,29 @@
   }
 }
 
+.btn-location,
+.btn-franchise {
+  position: relative;
+  min-width: 150px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  padding: 10px 40px 10px 20px;
+}
+
+.btn-light__svg--franchise {
+  position: absolute;
+  top: 30%;
+  left: 75%;
+}
+
+.btn-light__svg--location {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  fill: $color-button-secondary;
+}
+
 @media screen and (max-width: 767px) {
   .btn-light {
     &__hero {
@@ -158,6 +181,14 @@
     &--hamburger {
       margin-left: 10%;
     }
+  }
+
+  .btn-location {
+    width: 190px;
+  }
+
+  .btn-franchise {
+    width: 174px;
   }
 }
 
@@ -199,5 +230,14 @@
       line-height: 21px;
       padding: 10px 37px 10px 20px;
     }
+  }
+
+  .btn-location {
+    width: 198px;
+  }
+
+  .btn-franchise {
+    width: 180px;
+    font-size: 16px;
   }
 }
