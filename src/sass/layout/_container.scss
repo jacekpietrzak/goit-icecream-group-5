@@ -14,7 +14,6 @@
 
   &--bg-secondary {
     background-color: $color-bg-body-secondary;
-    height: 502px;
   }
 
   &--bg-tertiary {
@@ -52,10 +51,6 @@
     padding-right: $container-padding-tablet;
     width: 100%;
 
-    &--bg-secondary {
-      height: 399px;
-    }
-
     &--about-bg-milk {
       background-image: none;
     }
@@ -70,12 +65,6 @@
     padding-left: $container-padding-desktop;
     padding-right: $container-padding-desktop;
     width: 100%;
-
-    &--bg-secondary {
-      padding-left: 0;
-      padding-right: 0;
-      height: 665px;
-    }
 
     &--about-bg-milk {
       background-image: $about-bg-img-desktop;
