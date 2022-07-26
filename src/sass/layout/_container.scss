@@ -78,10 +78,10 @@
     }
 
     &--about-bg-milk {
-      background-image: url('../../src/images/about/about-background-desktop-@1X-1280x534.png');
+      background-image: $about-bg-img-desktop;
 
       @include retina {
-        background-image: url('../../src/images/about/about-background-desktop-@2X-2560x1068.png');
+        background-image: $about-bg-img-desktop-2x;
       }
 
       background-repeat: no-repeat;
