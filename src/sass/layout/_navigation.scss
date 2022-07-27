@@ -5,8 +5,8 @@
     border: none;
     background-color: transparent;
     position: absolute;
-    z-index: 1000;
-    left: 90%;
+    z-index: 999;
+    right: 20px;
     top: 25px;
     padding: 0;
     transition-duration: 250ms;
@@ -24,15 +24,21 @@
     }
 
     &__icon {
-        position: absolute;
-        z-index: 990;
-        left: 90%;
-        top: 25px;
         width: 20px;
         height: 12px;
     }
 
     &__close-btn {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__close-btn-icon {
         width: 14px;
         height: 14px;
     }
@@ -41,8 +47,8 @@
 .menu-container {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
+    right: 0;
+    width: 250px;
     height: 100vh;
     background-color: $color-bg-mobile-menu;
     z-index: 999;
@@ -60,13 +66,13 @@
 
 .menu-toggle {
 
-    left: 68%;
+    right: 224px;
     top: 52px;
 
-    &__icon {
-        left: 68%;
-        top: 52px;
-    }
+    // &__icon {
+    //     right: 20px;
+    //     top: 52px;
+    // }
 }
 }
 

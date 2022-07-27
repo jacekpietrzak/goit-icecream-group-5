@@ -6,6 +6,7 @@
 //
 // Mobile 320-768//
 .header {
+    min-height: 502px;
 
     &__logo {
         padding-top: 6px;
@@ -74,6 +75,7 @@
 @media screen and (min-width: $tablet) {
 
 .header {
+    min-height: 399px;
 
     &__logo {
         padding-top: 37px;
@@ -173,6 +175,7 @@
 @media screen and (min-width: $desktop) {
 
     .header {
+        min-height: 665px;
 
         &__logo {
             margin-left: -69px;
