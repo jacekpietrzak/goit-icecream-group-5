@@ -1,4 +1,5 @@
-<div class="container container--bg-secondary overflow">
+<!-- <div class="container container--bg-secondary overflow"> -->
+<div class="container container--bg-secondary relative">
   <section class="header">
     <img class="header__logo" src="./images/hero-header/logo-header.png" />
     <nav class="main-navigation">
@@ -30,14 +31,12 @@
       <button class="btn-light btn-light--margin-left" type="button">How it's made?</button>
     </div>
 
-    <button
-      class="menu-toggle js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    ></button>
-    <svg class="menu-toggle__icon">
-      <use href="./images/icons.svg#icon-burger"></use>
-    </svg>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu-toggle__icon">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+
     <section class="hero">
       <picture>
         <source
@@ -63,9 +62,9 @@
         />
         <img class="hero__background" src="./images/hero-header/ice-cream-desktop-2.png" />
       </picture>
-      <svg class="hero__ellipse">
+      <!-- <svg class="hero__ellipse">
         <use href="./images/icons.svg#icon-ellipse"></use>
-      </svg>
+      </svg> -->
       <picture>
         <source
           srcset="
@@ -131,9 +130,10 @@
     </section>
   </section>
 </div>
+
 <div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-toggle js-close-menu">
-    <svg class="menu-toggle__close-btn">
+  <button class="menu-toggle__close-btn js-close-menu">
+    <svg class="menu-toggle__close-btn-icon">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
   </button>
