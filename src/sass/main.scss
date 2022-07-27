@@ -5,39 +5,20 @@
 
 @charset "UTF-8";
 
- // 1. Configuration and helpers
-@import 
-'utils/variables',
-'utils/mixins';
+// 1. Configuration and helpers
+@import 'utils/variables', 'utils/mixins';
 
 // 2. Vendors
-@import 
-'vendors/normalize';
+@import 'vendors/normalize';
 
 // 3. Base stuff
-@import 
-'base/base',
-'base/typography',
-'base/helpers';
+@import 'base/base', 'base/typography', 'base/helpers';
 
 // 4. Layout-related sections
-@import 
-'layout/container',
-'layout/hero-header',
-'layout/products',
-'layout/about',
-'layout/advantages',
-'layout/gallery',
-'layout/customer-reviews',
-'layout/contacts',
-'layout/navigation',
-'layout/footer';
-
+@import 'layout/container', 'layout/hero-header', 'layout/products', 'layout/about',
+  'layout/advantages', 'layout/gallery', 'layout/customer-reviews', 'layout/contacts',
+  'layout/navigation', 'layout/footer', 'layout/modal';
 
 // 5. Components
-@import
-'components/header-h1',
-'components/header-h2',
-'components/header-h3',
-'components/button-dark',
-'components/button-light';
+@import 'components/header-h1', 'components/header-h2', 'components/header-h3',
+  'components/button-dark', 'components/button-light';
