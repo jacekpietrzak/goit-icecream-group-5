@@ -10,15 +10,15 @@
     align-items: center;
     background-color: $color-button-primary;
     border: 0px;
-    border-radius: 20px;
+    border-radius: 22px;
     color: $color-text-tertiary;
     font-weight: 400;
-    min-height: 24px;
+    min-height: 44px;
     cursor: pointer;
 
-    padding: 7px 14.5px;
-    font-size: 8px;
-    line-height: 1.25;
+    padding: 0 22px;
+    font-size: 16px;
+    line-height: 1.3125;
 
     &__icon {
         fill: $color-text-tertiary;
@@ -33,6 +33,26 @@
     &:focus {
         background-color: $color-button-primary-hover;
         color: $color-text-tertiary;
+    }
+
+    &--svg {
+        width: 7px;
+        height: 18px;
+        top: 10%;
+        stroke: $color-text-tertiary;
+        stroke-width: 6px;
+    }
+
+    &--margin-left-big {
+        margin-left: 14px;
+    }
+
+    &--margin-left-small {
+        margin-left: 8px;
+    }
+
+    &--text-bold {
+        font-weight: 700;
     }
 }
 

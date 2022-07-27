@@ -1,7 +1,7 @@
 <div class="container container--bg-tertiary">
   <section class="contacts">
     <div class="header-hidden">
-      <h3 class="header-h3">Contacts</h3>
+      <h3 id="contacts" class="header-h3">Contacts</h3>
       <h2 class="header-h2">Contacs</h2>
     </div>
 
@@ -13,7 +13,7 @@
           </div>
 
           <div class="contacts-grid__min-card--margin-bottom">
-            <span class="contacts-grid__town">Chicago</span>
+            <div class="contacts-grid__town">Chicago</div>
             <p class="contacts-grid__description">
               Fusce ut velit laoreet, tempus arcu molestie vulputate
             </p>
@@ -23,10 +23,14 @@
             class="contacts-grid__list contacts-grid__min-card--line contacts-grid__min-card--margin-bottom"
           >
             <li><span class="contacts-grid__open-day">Monday - Friday</span></li>
-            <li><span class="contacts-grid__open-time">06:00 AM - 10:00 PM</span></li>
+            <li class="contacts-grid__item">
+              <span class="contacts-grid__open-time">06:00 AM - 10:00 PM</span>
+            </li>
 
             <li><span class="contacts-grid__open-day">Saturday - Sunday</span></li>
-            <li><span class="contacts-grid__open-time">08:00 AM - 16:00 PM</span></li>
+            <li class="contacts-grid__item">
+              <span class="contacts-grid__open-time">08:00 AM - 16:00 PM</span>
+            </li>
           </ul>
 
           <div class="contacts-grid__min-card--line">
@@ -42,12 +46,12 @@
         <div class="contacts-grid__min-card">
           <div class="contacts-grid__branch">
             <span class="contacts-grid__branch-name contacts-grid__branch-name--food-truck"
-              >Food Truck</span
+              >FoodTruck</span
             >
           </div>
 
           <div class="contacts-grid__min-card--margin-bottom">
-            <span class="contacts-grid__town">Los Angeles</span>
+            <div class="contacts-grid__town">Los Angeles</div>
             <p class="contacts-grid__description line-g-margin">
               Fusce ut velit laoreet, tempus arcu molestie vulputate
             </p>
@@ -57,10 +61,14 @@
             class="contacts-grid__list contacts-grid__min-card--line contacts-grid__min-card--margin-bottom"
           >
             <li><span class="contacts-grid__open-day">Monday - Friday</span></li>
-            <li><span class="contacts-grid__open-time">06:00 AM - 10:00 PM</span></li>
+            <li class="contacts-grid__item">
+              <span class="contacts-grid__open-time">06:00 AM - 10:00 PM</span>
+            </li>
 
             <li><span class="contacts-grid__open-day">Saturday - Sunday</span></li>
-            <li><span class="contacts-grid__open-time">08:00 AM - 16:00 PM</span></li>
+            <li class="contacts-grid__item">
+              <span class="contacts-grid__open-time">08:00 AM - 16:00 PM</span>
+            </li>
           </ul>
 
           <div class="contacts-grid__min-card--line">
@@ -79,7 +87,7 @@
           </div>
 
           <div>
-            <span class="contacts-grid__town">New York</span>
+            <div class="contacts-grid__town">New York</div>
             <p class="contacts-grid__description contacts-grid__min-card--margin-bottom">
               Fusce ut velit laoreet, tempus arcu molestie vulputate
             </p>
@@ -89,10 +97,14 @@
             class="contacts-grid__list contacts-grid__min-card--line contacts-grid__min-card--margin-bottom"
           >
             <li><span class="contacts-grid__open-day">Monday - Friday</span></li>
-            <li><span class="contacts-grid__open-time">06:00 AM - 10:00 PM</span></li>
+            <li class="contacts-grid__item">
+              <span class="contacts-grid__open-time">06:00 AM - 10:00 PM</span>
+            </li>
 
             <li><span class="contacts-grid__open-day">Saturday - Sunday</span></li>
-            <li><span class="contacts-grid__open-time">08:00 AM - 16:00 PM</span></li>
+            <li class="contacts-grid__item">
+              <span class="contacts-grid__open-time">08:00 AM - 16:00 PM</span>
+            </li>
           </ul>
 
           <div class="contacts-grid__min-card--line">
@@ -106,8 +118,18 @@
     </div>
 
     <div class="contacts-button contacts-button--padding-bottom">
-      <button class="btn-dark" type="button">Our Locations</button>
-      <button class="btn-light btn-light--margin-left" type="button">Franchise</button>
+      <button class="btn-dark btn-dark--text-bold" type="button">
+        Our Locations
+        <svg class="btn-dark--svg btn-dark--margin-left-small">
+          <use href="./images/icons.svg#icon-arrow-btn"></use>
+        </svg>
+      </button>
+      <button class="btn-light btn-light--text-bold" type="button">
+        Franchise
+        <svg class="btn-light--svg btn-light--margin-left-small">
+          <use href="./images/icons.svg#icon-arrow-btn"></use>
+        </svg>
+      </button>
     </div>
   </section>
 </div>

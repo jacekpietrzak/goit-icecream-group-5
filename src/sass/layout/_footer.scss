@@ -6,20 +6,34 @@
 // Mobile 320-768//
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 43px;
+  padding-bottom: 43px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+
 }
 
 .footer-social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+
   &__list {
     display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
     align-items: center;
+    gap: 28px;
+    justify-content: center;
     list-style-type: none;
-  }
-
-  &__item {
-    margin-bottom: 50px;
   }
 
   &__icon {
@@ -35,10 +49,6 @@
     &:hover {
       background-color: $color-footer-icon-secondary;
     }
-
-    &:nth-child(1) {
-      margin-right: 28.24px;
-    }
   }
 
   &__svg {
@@ -50,18 +60,23 @@
     color: $color-text-primary;
     font-family: $text-font-stack;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 1.83;
+    display: block;
+
   }
 
   &__tel-link {
     color: $color-brand-primary;
     font-family: $text-font-stack;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 1.83;
   }
 }
 
 .rights-reserved {
+  width: 100%;
   border-top: 1px solid $color-footer-border-line;
   text-align: center;
 
@@ -70,27 +85,76 @@
     font-family: $text-font-stack;
     font-weight: 700;
     font-size: 14px;
+    line-height: 1.5;
+    padding: 25px 70px;
   }
 }
 
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 91px;
+  
+
+      &__header {
+        flex-direction: column;
+        flex-basis: 50%;
+        gap: 15px;
+      }
+  }
+
   .footer-social-media {
+    &__list {
+      justify-content: end;
+      flex-basis: 50%;
+    }
+
     &_icon {
       &:nth-child(1) {
         margin-right: 30px;
       }
     }
   }
+
+  .rights-reserved {
+
+    &__text {
+      padding: 23.5px;
+    }
+  }
 }
+
 
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {
   .footer-social-media {
+    gap: 50px;
+
     &_icon {
       &:nth-child(1) {
         margin-right: 24px;
       }
+    }
+
+    &__tel {
+      font-size: 16px;
+      line-height: 1.875;
+
+
+    }
+
+    &__tel-link {
+      font-size: 16px;
+      line-height: 1.875;
+    }
+  }
+
+  .rights-reserved {
+
+    &__text {
+      padding: 10px 0;
     }
   }
 }
