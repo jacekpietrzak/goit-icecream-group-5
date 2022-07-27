@@ -5,281 +5,248 @@
 
 //
 // Mobile 320-768//
-.hero-header {
-    padding-top: 6px;
-    width: 100%;
-
+.header {
 
     &__logo {
-        z-index: 999;
-        position: absolute;
+        padding-top: 6px;
     }
 
-    &__header {
-        width: 218px;
-        z-index: 998;
+    &__title-box {
         position: relative;
-        top: 193px
+        z-index: 992;
+        padding-top: 137px;
+        width: 218px;
     }
 
     &__buttons {
-        margin-top: 19px;
-        z-index: 997;
         position: relative;
-        top: 186px;
+        z-index: 992;
+        padding-top: 19px;
     }
+}
 
-    &__ice-cream {
-        z-index: 996;
-        top: 92px;
-        left: 36.5%;
+.hero {
+
+    &__background {
         position: absolute;
+        z-index: 990;
+        left: 37%;
+        top: 92px;
         width: 171px;
         height: 410px;
-        
     }
 
     &__ellipse {
-        z-index: 995;
-        width: 324px;
-        height: 322px;
-        border-radius: 50%;
-        background-color: $color-brand-secondary;
         position: absolute;
+        z-index: 989;
+        left: 11.25%;
+        top: 83px;
+        width: 346px;
+        height: 344px;
+    }
+
+    &__so-tasty {
+        display: none;
+    }
+
+    &__milk {
+        display: none;
+    }
+
+    &__milk-description {
+        display: none;
+    }
+
+    &__milk-button {
+        display: none;
+    }
+
+    &__number-box {
+        display: none;
+    }
+
+    &__number-circle {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: $tablet) {
+
+.header {
+
+    &__logo {
+        padding-top: 37px;
+    }
+
+    &__title-box {
+        padding-top: 15px;
+        width: 162px;
+    }
+}
+
+.hero {
+
+    &__background {
+        left: 49%;
+        top: 63px;
+        width: 143px;
+        height: 336px;
+    }
+
+    &__ellipse {
         left: 40%;
         top: 31px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .hero-header {
-
-        &__ellipse {
-            display: none;
-        }
+        width: 324px;
+        height: 322px;
     }
 
-    .so-tasty {
-        display: none;
-    }
-
-    .milk {
-        display: none;
-
-        &__loremipsum {
-            display: none;
-        }
-    }
-
-    .hero-numbers {
-        display: none;
-    }
-
-    .white-ellipse {
-        display: none;
-    }
-}
-
-// Tablet 768-1280//
-@media screen and (min-width: $tablet) {
-    .hero-header {
-        padding-top: 37px;
-
-        &__header {
-            width: 162px;
-            top: 65px;
-        }
-
-        &__buttons {
-            top: 63px;
-        }
-
-        &__ice-cream {
-            width: 143px;
-            height: 336px;
-            left: 49.2%;
-            top: 63px;
-        }
-    }
-
-    .so-tasty {
+    &__so-tasty {
+        display: block;
         position: absolute;
-        z-index: 999;
-        left: 73.7%;
+        z-index: 990;
+        left: 74%;
         top: 266px;
         width: 168px;
         height: 133px;
     }
 
-    .milk {
+    &__milk {
+        display: block;
         position: absolute;
-        z-index: 999;
-        left: 4.4%;
+        left: 3%;
         top: 245px;
         width: 124px;
         height: 126px;
-
-        &__loremipsum {
-            position: absolute;
-            z-index: 999;
-            left: 20%;
-            top: 292px;
-            display: block;
-            width: 114px;
-            height: 48px;
-            font-weight: 400;
-            font-size: 8px;
-            line-height: 150%;
-            color: $color-contacts-bg;
-        }
-
-        &__icon {
-           width: 18px;
-           height: 18px;
-           margin-top: 6px;
-        }
     }
 
-    .hero-numbers {
-        position: absolute;
-        left: 88%;
-        top: 99px;
-        text-align: end;
+    &__milk-description {
+        display: block;
+        width: 114px;
+        height: 48px;
+        margin-top: 66px;
+        margin-left: 15.6%;
+    }
 
-        &__text {
-            margin-bottom: 13px;
-            font-weight: 400;
-            font-size: 8px;
-            line-height: 150%;
-            color: $color-contacts-bg;
+    &__milk-button {
+        display: block;
+        margin-top: 7px;
+        margin-left: 15.6%;
+    }
+
+    &__number-box {
+        display: block;
+        position: absolute;
+        left: 91%;
+        top: 94px;
+    }
+
+    &__text {
+       display: block;
+       font-weight: 400;
+       font-size: 8px;
+       line-height: 150%; 
+       color: $color-text-tertiary;
+       margin-bottom: 8px;
+    }
+
+    &__number-circle {
+        display: block;
+        position: absolute;
+        z-index: 992;
+        width: 16px;
+        height: 16px;
+        left: 25px;
+
+        &--first {
+            top: -2px;
         }
-    }
 
-    .white-ellipse-1 {
-        position: absolute;
-        z-index: 990;
-        width: 14px;
-        height: 14px;
-        left: 82%;
-    }
-
-    .white-ellipse-2 {
-        position: absolute;
-        z-index: 990;
-        width: 14px;
-        height: 14px;
-        left: 82%;
+        &--second {
+            top: 48px;
+        }
     }
 }
 
-// Desktop 1280+//
+}
+
 @media screen and (min-width: $desktop) {
 
-.hero-header {
+    .header {
 
-    padding-top: 37px;
+        &__logo {
+            margin-left: -69px;
+        }
 
-    &__logo {
-        position: relative;
-        left: -70px;
+        &__title-box {
+            width: 277px;
+            height: 137px;
+            margin-top: 54px;
+        }
+
+        &__buttons {
+            margin-top: 25px;
+        }
     }
+    
+    .hero {
 
-    &__header {
-        position: relative;
-        width: 277px;
-        top: 84px;
-        left: -1px;
-    }
+        &__background {
+            width: 236px;
+            height: 557px;
+            left: 594px;
+            top: 108px;
+        }
 
-    &__buttons {
-        margin-top: 0;
-        position: relative;
-        left: -1px;
-        top: 107px;
+        &__ellipse {
+            width: 538px;
+            height: 538px;
+            left: 475px;
+            top: 52px;
+        }
 
-    }
+        &__so-tasty {
+            width: 293px;
+            height: 232px;
+            left: 878px;
+            top: 433px;
+        }
 
-    &__ice-cream {
-        position: relative;
-        width: 236px;
-        height: 557px;
-        top: -166px;
-        left: 475px;
-    }
-
-    &__ellipse {
-        position: relative;
-        top: -779px;
-        left: 365px;
-        width: 538px;
-        height: 538px;
-        border-radius: 50%;
-        background-color: $color-brand-secondary;
-
-    }
-}
-
-   .so-tasty {
-        position: relative;
-        left: 760px;
-        top: -983px;
-        width: 293px;
-        height: 232px;
-    }
-
-    .milk {
-        position: relative;
-            left: -330px;
-            top: -1025px;
+        &__milk {
             width: 188px;
             height: 191px;
+            left: 77px;
+            top: 429px;
+        }
 
-        &__loremipsum {
-            position: relative;
-            left: 185px;
-            top: -1160px;
-            display: block;
+        &__milk-description {
             width: 200px;
             height: 78px;
+            margin-top: 110px;
+        }
+
+        &__milk-button {
+            margin-top: 12px;
+        }
+
+        &__number-box {
+            left: 1111px;
+            top: 156px;
+        }
+
+        &__text {
             font-size: 14px;
             line-height: 140%;
         }
 
-        &__icon {
-           width: 26px;
-           height: 26px;
-           margin-top: 14px;
+        &__number-circle {
+            width: 30px;
+            height: 30px;
+            left: 43px;
+
+            &--second {
+                top: 76px;
+            }
         }
-    }
-
-    .hero-numbers {
-        position: relative;
-        left: 0;
-        top: -1575px;
-        text-align: end;
-
-        &__text {
-            margin-bottom: 13px;
-            font-size: 14px;
-            line-height: 18px;
-        }
-    }
-
-    .white-ellipse-1 {
-        position: absolute;
-        z-index: 990;
-        left: 99%;
-        top: -3px;
-        width: 30px;
-        height: 30px;
-    }
-
-    .white-ellipse-2 {
-        position: absolute;
-        z-index: 990;
-        left: 99%;
-        top: 82px;
-        width: 30px;
-        height: 30px;
     }
 }
