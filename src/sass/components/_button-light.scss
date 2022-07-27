@@ -10,14 +10,14 @@
   align-items: center;
   background-color: $color-button-secondary;
   border: 0px;
-  border-radius: 20px;
+  border-radius: 22px;
   color: $color-brand-primary;
   font-weight: 400;
-  min-height: 24px;
+  min-height: 44px;
   cursor: pointer;
-  padding: 7px 14.5px;
-  font-size: 8px;
-  line-height: 1.25;
+  padding: 0 22px;
+  font-size: 16px;
+  line-height: 1.3125;
   transition: all 0.2s ease-in-out;
 
   &--mobile-menu {
@@ -50,10 +50,39 @@
     margin-left: 14px;
   }
 
-  &__arrow {
-    width: 6px;
-    height: 10px;
-    margin-left: 13px;
+  &--margin-left-small {
+    margin-left: 8px;
+  }
+
+  &--text-bold {
+    font-weight: 700;
+  }
+
+  &__hero {
+    position: absolute;
+    z-index: 998;
+    left: 69px;
+    top: -8.5px;
+    width: 160px;
+    height: 44px;
+    background-color: $color-button-secondary;
+    border: 0px;
+    border-radius: 20px;
+    color: $color-brand-primary;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+    border-radius: 22px;
+    padding: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $color-button-secondary-hover;
+    }
   }
 
   &__icon {
@@ -63,8 +92,7 @@
       margin-left: 12px;
     }
 
-
-    &--margin-left {
+    &--margin-left-small {
       margin-left: 8px;
     }
 
@@ -110,6 +138,8 @@
     width: 7px;
     height: 18px;
     top: 10%;
+    stroke: $color-brand-primary;
+    stroke-width: 6px;
   }
 
   &--return {
