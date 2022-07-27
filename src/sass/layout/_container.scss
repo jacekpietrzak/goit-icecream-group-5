@@ -40,6 +40,22 @@
     background-size: contain;
     background-position: 0 90%;
   }
+
+  &--contact-bg {
+    background-image: $contact-bg-img;
+
+    @include retina {
+      background-image: $contact-bg-img-2x;
+    }
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+  }
+
+  &--border-top {
+    border-top: 1px solid $color-footer-border-line;
+  }
 }
 
 .relative {
