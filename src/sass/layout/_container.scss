@@ -30,17 +30,6 @@
     );
   }
 
-  &--about-bg-milk {
-    background-image: $about-bg-img;
-    @include retina {
-      background-image: $about-bg-img-2x;
-    }
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 90%;
-  }
-
   &--contact-bg {
     background-image: $contact-bg-img;
 
@@ -59,9 +48,10 @@
 }
 
 .relative {
-    overflow-x: hidden;
-    position: relative;
-  }
+  overflow-x: hidden;
+  position: relative;
+  height: 502px;
+}
 
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
@@ -71,10 +61,10 @@
     padding-left: $container-padding-tablet;
     padding-right: $container-padding-tablet;
     width: 100%;
+  }
 
-    &--about-bg-milk {
-      background-image: none;
-    }
+  .relative {
+    height: 399px;
   }
 }
 
@@ -86,17 +76,9 @@
     padding-left: $container-padding-desktop;
     padding-right: $container-padding-desktop;
     width: 100%;
+  }
 
-    &--about-bg-milk {
-      background-image: $about-bg-img-desktop;
-
-      @include retina {
-        background-image: $about-bg-img-desktop-2x;
-      }
-
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 0 90%;
-    }
+  .relative {
+    height: 665px;
   }
 }

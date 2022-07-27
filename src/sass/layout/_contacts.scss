@@ -10,13 +10,17 @@
   display: none;
 }
 
+.contacts {
+  background-color: $color-bg-body-tertiary;
+}
+
 .contacts-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    max-width: 170px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  max-width: 170px;
+  margin: 0 auto;
 
   &--padding-bottom {
     padding-bottom: 113px;
@@ -168,7 +172,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: $tablet){
+@media screen and (max-width: $tablet) {
   .contacts {
     padding: 0 30px;
   }
@@ -203,8 +207,7 @@
       &:first-child {
         margin-top: -78px;
       }
-    margin-top: -78px;
-      
+      margin-top: -78px;
     }
 
     &__min-card {
@@ -257,6 +260,12 @@
 
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {
+  .contacts {
+    background-image: $contact-bg-img;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   .contacts-grid {
     display: flex;
     flex-wrap: nowrap;
