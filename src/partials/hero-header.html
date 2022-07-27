@@ -1,6 +1,6 @@
 <!-- <div class="container container--bg-secondary overflow"> -->
 <div class="container container--bg-secondary relative">
-  <section class="header">
+  <section class="header" id="home">
     <img class="header__logo" src="./images/hero-header/logo-header.png" />
     <nav class="main-navigation">
       <ul class="main-navigation__list">
@@ -8,16 +8,16 @@
           <a href="#home" class="main-navigation__link">Home</a>
         </li>
         <li class="main-navigation__item">
-          <a href="#" class="main-navigation__link">About us</a>
+          <a href="#about" class="main-navigation__link">About us</a>
         </li>
         <li class="main-navigation__item">
-          <a href="#" class="main-navigation__link">How it's made?</a>
+          <a href="#advantages" class="main-navigation__link">How it's made?</a>
         </li>
         <li class="main-navigation__item">
-          <a href="#" class="main-navigation__link">Our products</a>
+          <a href="#products" class="main-navigation__link">Our products</a>
         </li>
         <li class="main-navigation__item">
-          <a href="#" class="main-navigation__link">Contact</a>
+          <a href="#contacts" class="main-navigation__link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -27,8 +27,10 @@
       </h1>
     </div>
     <div class="header__buttons">
-      <button class="btn-dark" type="button">Products</button>
-      <button class="btn-light btn-light--margin-left" type="button">How it's made?</button>
+      <a href="#products"><button class="btn-dark" type="button">Products</button></a>
+      <a href="#about"
+        ><button class="btn-light btn-light--margin-left" type="button">How it's made?</button></a
+      >
     </div>
 
     <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -62,9 +64,9 @@
         />
         <img class="hero__background" src="./images/hero-header/ice-cream-desktop-2.png" />
       </picture>
-      <!-- <svg class="hero__ellipse">
+      <svg class="hero__ellipse">
         <use href="./images/icons.svg#icon-ellipse"></use>
-      </svg> -->
+      </svg>
       <picture>
         <source
           srcset="
@@ -132,7 +134,7 @@
 </div>
 
 <div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-toggle__close-btn js-close-menu">
+  <button class="menu-toggle__close-btn js-close-menu" type="button">
     <svg class="menu-toggle__close-btn-icon">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
@@ -147,19 +149,19 @@
       </button>
     </li>
     <li class="mobile-navigation__item mobile-navigation__item--upper-border">
-      <a class="mobile-navigation__link" href="#">Home</a>
+      <a class="mobile-navigation__link" href="#home">Home</a>
     </li>
     <li class="mobile-navigation__item">
-      <a class="link mobile-navigation__link" href="#">About us</a>
+      <a class="link mobile-navigation__link" href="#about">About us</a>
     </li>
     <li class="mobile-navigation__item">
-      <a class="link mobile-navigation__link" href="#">How it's made?</a>
+      <a class="link mobile-navigation__link" href="#advantages">How it's made?</a>
     </li>
     <li class="mobile-navigation__item">
-      <a class="link mobile-navigation__link" href="#">Our products</a>
+      <a class="link mobile-navigation__link" href="#products">Our products</a>
     </li>
     <li class="mobile-navigation__item">
-      <a class="link mobile-navigation__link" href="#">Contact</a>
+      <a class="link mobile-navigation__link" href="#contacts">Contact</a>
     </li>
   </ul>
 </div>
