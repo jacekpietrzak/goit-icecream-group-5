@@ -6,250 +6,244 @@
 //
 // Mobile 320-768//
 .header {
-    min-height: 502px;
+  background-color: $color-bg-body-secondary;
+  min-height: 502px;
 
-    &__logo {
-        padding-top: 6px;
-    }
+  &__logo {
+    padding-top: 6px;
+  }
 
-    &__title-box {
-        position: relative;
-        z-index: 992;
-        padding-top: 137px;
-        width: 218px;
-    }
+  &__title-box {
+    position: relative;
+    z-index: 992;
+    padding-top: 137px;
+    width: 218px;
+  }
 
-    &__buttons {
-        position: relative;
-        z-index: 992;
-        padding-top: 19px;
-    }
+  &__buttons {
+    position: relative;
+    z-index: 992;
+    padding-top: 19px;
+  }
 }
 
 .hero {
+  &__background {
+    position: absolute;
+    z-index: 990;
+    left: 37%;
+    top: 92px;
+    width: 171px;
+    height: 410px;
+  }
 
-    &__background {
-        position: absolute;
-        z-index: 990;
-        left: 37%;
-        top: 92px;
-        width: 171px;
-        height: 410px;
-    }
+  &__ellipse {
+    position: absolute;
+    z-index: 989;
+    left: 11.25%;
+    top: 83px;
+    width: 346px;
+    height: 344px;
+  }
 
-    &__ellipse {
-        position: absolute;
-        z-index: 989;
-        left: 11.25%;
-        top: 83px;
-        width: 346px;
-        height: 344px;
-    }
+  &__so-tasty {
+    display: none;
+  }
 
-    &__so-tasty {
-        display: none;
-    }
+  &__milk {
+    display: none;
+  }
 
-    &__milk {
-        display: none;
-    }
+  &__milk-description {
+    display: none;
+  }
 
-    &__milk-description {
-        display: none;
-    }
+  &__milk-button {
+    display: none;
+  }
 
-    &__milk-button {
-        display: none;
-    }
+  &__number-box {
+    display: none;
+  }
 
-    &__number-box {
-        display: none;
-    }
-
-    &__number-circle {
-        display: none;
-    }
+  &__number-circle {
+    display: none;
+  }
 }
 
-
 @media screen and (min-width: $tablet) {
-
-.header {
+  .header {
     min-height: 399px;
 
     &__logo {
-        padding-top: 37px;
+      padding-top: 37px;
     }
 
     &__title-box {
-        padding-top: 15px;
-        width: 162px;
+      padding-top: 15px;
+      width: 162px;
     }
-}
+  }
 
-.hero {
-
+  .hero {
     &__background {
-        left: 49%;
-        top: 63px;
-        width: 143px;
-        height: 336px;
+      left: 49%;
+      top: 63px;
+      width: 143px;
+      height: 336px;
     }
 
     &__ellipse {
-        left: 40%;
-        top: 31px;
-        width: 324px;
-        height: 322px;
+      left: 40%;
+      top: 31px;
+      width: 324px;
+      height: 322px;
     }
 
     &__so-tasty {
-        display: block;
-        position: absolute;
-        z-index: 990;
-        left: 74%;
-        top: 266px;
-        width: 168px;
-        height: 133px;
+      display: block;
+      position: absolute;
+      z-index: 990;
+      left: 74%;
+      top: 266px;
+      width: 168px;
+      height: 133px;
     }
 
     &__milk {
-        display: block;
-        position: absolute;
-        left: 3%;
-        top: 245px;
-        width: 124px;
-        height: 126px;
+      display: block;
+      position: absolute;
+      left: 3%;
+      top: 245px;
+      width: 124px;
+      height: 126px;
     }
 
     &__milk-description {
-        display: block;
-        width: 114px;
-        height: 48px;
-        margin-top: 66px;
-        margin-left: 15.6%;
+      display: block;
+      width: 114px;
+      height: 48px;
+      margin-top: 66px;
+      margin-left: 15.6%;
     }
 
     &__milk-button {
-        display: block;
-        margin-top: 7px;
-        margin-left: 15.6%;
+      display: block;
+      margin-top: 7px;
+      margin-left: 15.6%;
     }
 
     &__number-box {
-        display: block;
-        position: absolute;
-        left: 91%;
-        top: 94px;
+      display: block;
+      position: absolute;
+      left: 91%;
+      top: 94px;
     }
 
     &__text {
-       display: block;
-       font-weight: 400;
-       font-size: 8px;
-       line-height: 150%; 
-       color: $color-text-tertiary;
-       margin-bottom: 8px;
+      display: block;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 150%;
+      color: $color-text-tertiary;
+      margin-bottom: 8px;
     }
 
     &__number-circle {
-        display: block;
-        position: absolute;
-        z-index: 992;
-        width: 16px;
-        height: 16px;
-        left: 25px;
+      display: block;
+      position: absolute;
+      z-index: 992;
+      width: 16px;
+      height: 16px;
+      left: 25px;
 
-        &--first {
-            top: -2px;
-        }
+      &--first {
+        top: -2px;
+      }
 
-        &--second {
-            top: 48px;
-        }
+      &--second {
+        top: 48px;
+      }
     }
-}
-
+  }
 }
 
 @media screen and (min-width: $desktop) {
+  .header {
+    min-height: 665px;
 
-    .header {
-        min-height: 665px;
-
-        &__logo {
-            margin-left: -69px;
-        }
-
-        &__title-box {
-            width: 277px;
-            height: 137px;
-            margin-top: 54px;
-        }
-
-        &__buttons {
-            margin-top: 25px;
-        }
+    &__logo {
+      margin-left: -69px;
     }
-    
-    .hero {
 
-        &__background {
-            width: 236px;
-            height: 557px;
-            left: 594px;
-            top: 108px;
-        }
-
-        &__ellipse {
-            width: 538px;
-            height: 538px;
-            left: 475px;
-            top: 52px;
-        }
-
-        &__so-tasty {
-            width: 293px;
-            height: 232px;
-            left: 878px;
-            top: 433px;
-        }
-
-        &__milk {
-            width: 188px;
-            height: 191px;
-            left: 77px;
-            top: 429px;
-        }
-
-        &__milk-description {
-            width: 200px;
-            height: 78px;
-            margin-top: 110px;
-        }
-
-        &__milk-button {
-            margin-top: 12px;
-        }
-
-        &__number-box {
-            left: 1111px;
-            top: 156px;
-        }
-
-        &__text {
-            font-size: 14px;
-            line-height: 140%;
-        }
-
-        &__number-circle {
-            width: 30px;
-            height: 30px;
-            left: 43px;
-
-            &--second {
-                top: 76px;
-            }
-        }
+    &__title-box {
+      width: 277px;
+      height: 137px;
+      margin-top: 54px;
     }
+
+    &__buttons {
+      margin-top: 25px;
+    }
+  }
+
+  .hero {
+    &__background {
+      width: 236px;
+      height: 557px;
+      left: 594px;
+      top: 108px;
+    }
+
+    &__ellipse {
+      width: 538px;
+      height: 538px;
+      left: 475px;
+      top: 52px;
+    }
+
+    &__so-tasty {
+      width: 293px;
+      height: 232px;
+      left: 878px;
+      top: 433px;
+    }
+
+    &__milk {
+      width: 188px;
+      height: 191px;
+      left: 77px;
+      top: 429px;
+    }
+
+    &__milk-description {
+      width: 200px;
+      height: 78px;
+      margin-top: 110px;
+    }
+
+    &__milk-button {
+      margin-top: 12px;
+    }
+
+    &__number-box {
+      left: 1111px;
+      top: 156px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    &__number-circle {
+      width: 30px;
+      height: 30px;
+      left: 43px;
+
+      &--second {
+        top: 76px;
+      }
+    }
+  }
 }

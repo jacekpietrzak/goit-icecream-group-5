@@ -7,6 +7,17 @@
 .about {
   padding-top: 125px;
   text-align: center;
+  background-color: $color-bg-body-tertiary;
+  background-image: $about-bg-img-l, $about-bg-img-p;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0% 92%, 100% 92%;
+
+  @include retina {
+    background-image: $about-bg-img-2x-l, $about-bg-img-2x-p;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 92%, 100% 92%;
+    background-size: 73px 133px, 90px 133px;
+  }
 
   &__image {
     display: block;
@@ -52,8 +63,8 @@
 
 @media screen and (min-width: $tablet) {
   .about {
-    padding-top: 130px;
     padding-bottom: 66px;
+    background-image: none;
 
     &__left-section {
       width: 50%;
@@ -81,6 +92,17 @@
   .about {
     padding-bottom: 40px;
     min-height: 840px;
+
+    background-image: $about-bg-img-desktop-l, $about-bg-img-desktop-p;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 120%, 100% 120%;
+
+    @include retina {
+      background-image: $about-bg-img-desktop-2x-l, $about-bg-img-desktop-2x-p;
+      background-repeat: no-repeat, no-repeat;
+      background-position: 0% 120%, 100% 120%;
+      background-size: 234px 534px, 320px 534px;
+    }
 
     &__left-section {
       width: 50%;

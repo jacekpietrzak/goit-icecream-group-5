@@ -1,7 +1,8 @@
 <!-- <div class="container container--bg-secondary overflow"> -->
-<div class="container container--bg-secondary relative">
   <section class="header" id="home">
-    <img class="header__logo" src="./images/hero-header/logo-header.png" />
+  <div class="container relative">
+  
+    <img class="header__logo" src="./images/hero-header/logo-header.png" alt="logo" />
     <nav class="main-navigation">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
@@ -22,15 +23,13 @@
       </ul>
     </nav>
     <div class="header__title-box">
-      <h1 id="home" class="header-h1">
+      <h1 class="header-h1">
         ice cream made with <span class="header-h1 header-h1--accent">passion</span>
       </h1>
     </div>
     <div class="header__buttons">
-      <a href="#products"><button class="btn-dark" type="button">Products</button></a>
-      <a href="#about"
-        ><button class="btn-light btn-light--margin-left" type="button">How it's made?</button></a
-      >
+      <a href="#products" class="btn-dark">Products</a>
+      <a href="#about" class="btn-light btn-light--margin-left">How it's made?</a>
     </div>
 
     <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -46,14 +45,14 @@
             ./images/hero-header/ice-cream-mobile-1.png 1x,
             ./images/hero-header/ice-cream-mobile-2.png 2x
           "
-          media="(min-width: 320px) (max-width: 767px)"
+          media="(min-width: 320px), (max-width: 767px)"
         />
         <source
           srcset="
             ./images/hero-header/ice-cream-tablet-1.png 1x,
             ./images/hero-header/ice-cream-tablet-2.png 2x
           "
-          media="(min-width: 768px) (max-width: 1279px)"
+          media="(min-width: 768px), (max-width: 1279px)"
         />
         <source
           srcset="
@@ -62,7 +61,11 @@
           "
           media="(min-width: 1280px)"
         />
-        <img class="hero__background" src="./images/hero-header/ice-cream-desktop-2.png" />
+        <img
+          class="hero__background"
+          src="./images/hero-header/ice-cream-desktop-2.png"
+          alt="ice-cream"
+        />
       </picture>
       <svg class="hero__ellipse">
         <use href="./images/icons.svg#icon-ellipse"></use>
@@ -73,7 +76,7 @@
             ./images/hero-header/so-tasty-tablet-1.png 1x,
             ./images/hero-header/so-tasty-tablet-2.png 2x
           "
-          media="(min-width: 768px) (max-width: 1279px)"
+          media="(min-width: 768px), (max-width: 1279px)"
         />
         <source
           srcset="
@@ -82,7 +85,11 @@
           "
           media="(min-width: 1280px)"
         />
-        <img class="hero__so-tasty" src="./images/hero-header/so-tasty-desktop-2.png" />
+        <img
+          class="hero__so-tasty"
+          src="./images/hero-header/so-tasty-desktop-2.png"
+          alt="girl eating ice-cream"
+        />
       </picture>
       <picture>
         <source
@@ -90,7 +97,7 @@
             ./images/hero-header/milk-tablet-1.png 1x,
             ./images/hero-header/milk-tablet-2.png 2x
           "
-          media="(min-width: 768px) (max-width: 1279px)"
+          media="(min-width: 768px), (max-width: 1279px)"
         />
         <source
           srcset="
@@ -99,7 +106,7 @@
           "
           media="(min-width: 1280px)"
         />
-        <img class="hero__milk" src="./images/hero-header/milk-desktop-2.png" />
+        <img class="hero__milk" src="./images/hero-header/milk-desktop-2.png" alt="jug of milk" />
       </picture>
       <div class="hero__milk-description">
         <p class="hero__text">
