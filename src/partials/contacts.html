@@ -106,8 +106,36 @@
     </div>
 
     <div class="contacts-button contacts-button--padding-bottom">
-      <button class="btn-dark" type="button">Our Locations</button>
-      <button class="btn-light btn-light--margin-left" type="button">Franchise</button>
+      <button class="btn-dark btn-location" type="button">Our Locations
+        <svg class="btn-light--svg btn-light__svg--location">
+          <use href="./images/icons.svg#icon-arrow-btn"></use>
+        </svg>
+      </button>
+
+      <button class="btn-light btn-light--margin-left btn-franchise" type="button">
+        Franchise
+        <svg class="btn-light--svg btn-light__svg--franchise">
+          <use href="./images/icons.svg#icon-arrow-btn"></use>
+        </svg>
+      </button>
+
+
+    <div class="contacts__modal-backdrop is-hidden">
+      <div class="contacts__modal">
+        <iframe
+        class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.709221589692!2d20.98295643469552!3d52.23050050066551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc9ad1fa403d%3A0x959aed6956067e91!2sProsta%2051%2C%2000-838%20Warszawa!5e0!3m2!1spl!2spl!4v1658872992749!5m2!1spl!2spl"
+    
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+          >
+        </iframe>
+      </div>
     </div>
   </section>
+
+  <script src="./js/contact-modal.js"></script>
 </div>
