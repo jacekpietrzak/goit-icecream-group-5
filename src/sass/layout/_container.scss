@@ -59,9 +59,10 @@
 }
 
 .relative {
-    overflow-x: hidden;
-    position: relative;
-  }
+  overflow-x: hidden;
+  position: relative;
+  height: 502px;
+}
 
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
@@ -75,6 +76,10 @@
     &--about-bg-milk {
       background-image: none;
     }
+  }
+
+  .relative {
+    height: 399px;
   }
 }
 
@@ -98,5 +103,9 @@
       background-size: contain;
       background-position: 0 90%;
     }
+  }
+
+  .relative {
+    height: 665px;
   }
 }
