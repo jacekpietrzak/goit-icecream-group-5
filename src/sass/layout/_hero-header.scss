@@ -56,6 +56,37 @@
 
   &__milk-description {
     display: none;
+    position: relative;
+  }
+
+  &__milk-description-long {
+    display: none;
+    position: absolute;
+    background-color: $color-bg-body-tertiary;
+    color: $color-text-primary;
+    z-index: 1000;
+    left: 50px;
+    bottom: -50px;
+    min-width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 1.3;
+    border: 2px solid $color-bg-mobile-menu;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      background-color: $color-bg-body-tertiary;
+      left: -11px;
+      bottom: 15px;
+      z-index: 999;
+      border-left: 2px solid $color-bg-mobile-menu;
+      border-bottom: 2px solid $color-bg-mobile-menu;
+    }
   }
 
   &__milk-button {
@@ -226,9 +257,11 @@
 @keyframes slide-left {
   0% {
     transform: translateX(110px);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
