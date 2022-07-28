@@ -113,22 +113,27 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
+
+        <p class="hero__milk-description-long" id="hero__milk-description-long">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa ex in dicta iste molestias cum veritatis, sapiente corrupti cupiditate tempora quo magnam, facilis incidunt itaque quibusdam perspiciatis fugit eaque earum nobis. Saepe iusto cupiditate ratione mollitia modi quidem! Deleniti, a cupiditate. Cum corrupti officiis ipsa aut incidunt ea. Adipisci, soluta?
+        </p>
+
       </div>
       <button
+        onclick="showMilkDescription()"
         class="hero__milk-button button-products button-products--hero"
         type="button"
       ></button>
+
+      
       <div class="hero__number-box">
+
         <h1 class="header-h1 header-h1--numbers">16</h1>
         <p class="hero__text hero__text--in-number-box">cafes</p>
-        <svg class="hero__number-circle hero__number-circle--first">
-          <use href="./images/icons.svg#icon-number-circle"></use>
-        </svg>
+        
         <h1 class="header-h1 header-h1--numbers">23</h1>
         <p class="hero__text hero__text--in-number-box">food trucks</p>
-        <svg class="hero__number-circle hero__number-circle--second">
-          <use href="./images/icons.svg#icon-number-circle"></use>
-        </svg>
+         
       </div>
       <button class="btn-light btn-light--hero" type="button">
         Buy now
@@ -172,4 +177,17 @@
     </li>
   </ul>
 </div>
+
+
 <script defer src="./mobile-menu.js"></script>
+
+<script>
+  function showMilkDescription() {
+  var x = document.getElementById('hero__milk-description-long');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+</script> 

@@ -5,63 +5,119 @@
 
 // Mobile 480-768//
 .header-h1 {
-    font-family: $accent-font-stack;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $color-text-tertiary;
+  font-family: $accent-font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-text-tertiary;
 
-    &--hidden {
-        display: none;
-    }
+  &--hidden {
+    display: none;
+  }
 
-    &--accent {
-        font-size: 48px;
-        line-height: 0.95;
-        color: $color-brand-primary;
-    }
+  &--accent {
+    font-size: 48px;
+    line-height: 0.95;
+    color: $color-brand-primary;
+  }
 }
 
 // Tablet 768-1280//
 @media screen and (min-width: $tablet) {
-.header-h1 {
+  .header-h1 {
     font-size: 22px;
     line-height: 1.136;
 
     &--accent {
-        font-size: 34px;
-        line-height: 0.905;
-        color: $color-brand-primary;
+      font-size: 34px;
+      line-height: 0.905;
+      color: $color-brand-primary;
     }
 
     &--numbers {
-        position: relative;
-        z-index: 995;
-        font-size: 28px;
-        line-height: 1.14;
-        color: $color-brand-primary;
+      position: relative;
+      z-index: 995;
+      font-size: 28px;
+      line-height: 1.14;
+      color: $color-brand-primary;
+      z-index: 2;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: -8%;
+        right: 0%;
+        border-radius: 50%;
+        background-color: $color-bg-body-primary;
+        z-index: -1;
+      }
+
+      &:nth-child(1)::after {
+        animation: slide-in 1.3s ease normal forwards;
+      }
+      &:nth-child(3)::after {
+        animation: slide-in 1.6s ease normal forwards;
+      }
     }
-}
+  }
 }
 
 // Desktop 1280+//
 @media screen and (min-width: $desktop) {
-.header-h1 {
+  .header-h1 {
     font-size: 38px;
     line-height: 1.145;
 
     &--accent {
-        font-size: 58px;
-        line-height: 0.905;
-        color: $color-brand-primary;
+      font-size: 58px;
+      line-height: 0.905;
+      color: $color-brand-primary;
     }
 
     &--numbers {
-        font-size: 46px;
-        line-height: 1.15;
+      font-size: 46px;
+      line-height: 1.15;
+
+      &::after {
+        width: 30px;
+        height: 30px;
+      }
     }
+  }
 }
+
+// ANIMATIONS
+
+@keyframes slide-in {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in-2 {
+  0% {
+    transform: scale(0);
+  }
+
+  60% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
