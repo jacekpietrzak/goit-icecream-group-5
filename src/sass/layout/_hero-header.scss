@@ -149,23 +149,6 @@
       color: $color-text-tertiary;
       margin-bottom: 8px;
     }
-
-    &__number-circle {
-      display: block;
-      position: absolute;
-      z-index: 992;
-      width: 16px;
-      height: 16px;
-      left: 25px;
-
-      &--first {
-        top: -2px;
-      }
-
-      &--second {
-        top: 48px;
-      }
-    }
   }
 }
 
@@ -236,22 +219,12 @@
       font-size: 14px;
       line-height: 140%;
     }
-
-    &__number-circle {
-      width: 30px;
-      height: 30px;
-      left: 43px;
-
-      &--second {
-        top: 76px;
-      }
-    }
   }
 }
 
 @keyframes slide-left {
   0% {
-    transform: translateX(200px);
+    transform: translateX(110px);
   }
   100% {
     transform: translateX(0);
