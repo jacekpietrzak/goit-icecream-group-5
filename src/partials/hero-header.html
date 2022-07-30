@@ -114,13 +114,13 @@
           ut labore et
         </p>
 
-        <p class="hero__milk-description-long" id="hero__milk-description-long">
+        <p class="hero__milk-description-long is-hidden">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa ex in dicta iste molestias cum veritatis, sapiente corrupti cupiditate tempora quo magnam, facilis incidunt itaque quibusdam perspiciatis fugit eaque earum nobis. Saepe iusto cupiditate ratione mollitia modi quidem! Deleniti, a cupiditate. Cum corrupti officiis ipsa aut incidunt ea. Adipisci, soluta?
         </p>
 
       </div>
       <button
-        onclick="showMilkDescription()"
+        
         class="hero__milk-button button-products button-products--hero"
         type="button"
       ></button>
@@ -141,6 +141,8 @@
           <use href="images/icons.svg#icon-arrow-btn"></use>
         </svg>
       </button>
+
+ 
     </section>
   </section>
 </div>
@@ -178,16 +180,7 @@
   </ul>
 </div>
 
-
+<script defer src="./js/hero-milk.js"></script>
 <script defer src="./mobile-menu.js"></script>
 
-<script>
-  function showMilkDescription() {
-  var x = document.getElementById('hero__milk-description-long');
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }
-}
-</script> 
+
