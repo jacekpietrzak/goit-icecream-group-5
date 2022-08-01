@@ -78,8 +78,14 @@ $container-padding-desktop: 115px;
 $transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Reviews Avatar background img
-$review-thumb-bg-img: url('../images/customer-reviews/testimonials1@1x-85x85.jpg');
-$review-thumb-bg-img-2x: url('../images/customer-reviews/testimonials1@2x-170x170.jpg');
+$review-thumb-bg-img1: url('../images/customer-reviews/testimonials1@1x-85x85.jpg');
+$review-thumb-bg-img1-2x: url('../images/customer-reviews/testimonials1@2x-170x170.jpg');
+
+$review-thumb-bg-img2: url('../images/customer-reviews/testimonials2@1x-85x85.jpg');
+$review-thumb-bg-img2-2x: url('../images/customer-reviews/testimonials2@2x-170x170.jpg');
+
+$review-thumb-bg-img3: url('../images/customer-reviews/testimonials3@1x-85x85.jpg');
+$review-thumb-bg-img3-2x: url('../images/customer-reviews/testimonials3@2x-170x170.jpg');
 
 // About background img
 $about-bg-img-l: url('../images/about/about-background-mobile-@1X-L.png');
