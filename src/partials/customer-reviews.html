@@ -1,41 +1,73 @@
 <section class="reviews">
   <div class="container">
     <h2 class="header-h2 header-h2--hidden">customer reviews</h2>
-    <div class="reviews__testimonial">
-      <div class="reviews__thumb"></div>
-      <div class="reviews__text-box">
-        <p class="reviews__text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-        </p>
-      </div>
-      <div class="reviews__list reviews__list--margin-bottom">
-        <svg class="reviews__icon-elipse reviews__icon-elipse--margin-left">
-          <use href="./images/icons.svg#icon-elipse"></use>
-        </svg>
 
-        <svg class="reviews__icon-elipse reviews__icon-elipse--margin-left">
-          <use href="./images/icons.svg#icon-elipse"></use>
+    <div class="carousel" data-carousel>
+      <button class="button button--previous" type="button" data-carousel-button="prev">
+        <svg class="icon__more-than">
+          <use href="./images/icons.svg#icon-more-than"></use>
         </svg>
+      </button>
 
-        <svg class="reviews__icon-elipse reviews__icon-elipse--margin-left">
-          <use href="./images/icons.svg#icon-elipse"></use>
+      <ul class="carousel__list" data-slides>
+        <li class="slide" data-active>
+          <div class="avatar"></div>
+          <div class="quote quote--icon">
+            <p class="quote__text quote__text--bg">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+          <div class="slide__divider">
+            <div class="icon__circle"></div>
+            <div class="icon__circle"></div>
+            <div class="icon__circle"></div>
+          </div>
+          <p class="slide__heading">Emily, Los Angeles</p>
+        </li>
+
+        <li class="slide">
+          <div class="avatar avatar--img2"></div>
+          <div class="quote quote--icon">
+            <p class="quote__text quote__text--bg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus earum, veritatis
+              quas optio ipsa quo quisquam officiis. Reprehenderit deserunt unde modi autem
+              voluptatem natus atque amet exercitationem quos nulla. Expedita vero maiores iure eius
+              impedit!
+            </p>
+          </div>
+          <div class="slide__divider">
+            <div class="icon__circle"></div>
+            <div class="icon__circle"></div>
+            <div class="icon__circle"></div>
+          </div>
+          <p class="slide__heading">Bonnie, New York</p>
+        </li>
+
+        <li class="slide">
+          <div class="avatar avatar--img3"></div>
+          <div class="quote quote--icon">
+            <p class="quote__text quote__text--bg">
+              Inventore, placeat consequatur saepe ad, obcaecati voluptates deleniti nobis amet modi
+              error, officiis dolorum iste neque nesciunt. Incidunt, non! Unde corporis illum
+              facilis, vero numquam, quas architecto explicabo dolorum veritatis quod quia libero
+              distinctio laudantium ipsa? Dolorem possimus voluptatum velit.
+            </p>
+          </div>
+          <div class="slide__divider">
+            <div class="icon__circle"></div>
+            <div class="icon__circle"></div>
+            <div class="icon__circle"></div>
+          </div>
+          <p class="slide__heading">Kelly, Chicago</p>
+        </li>
+      </ul>
+      <button class="button button--next" type="button" data-carousel-button="next">
+        <svg class="icon__more-than">
+          <use href="./images/icons.svg#icon-more-than"></use>
         </svg>
-      </div>
-      <div>
-        <p class="reviews__location reviews__location--margin-bottom">Emily, Los Angeles</p>
-      </div>
-      <div class="reviews__pagination">
-        <svg class="reviews__icon-home reviews__icon-home--margin-left">
-          <use href="./images/icons.svg#icon-home"></use>
-        </svg>
-        <svg class="reviews__icon-elipse-large reviews__icon-elipse-large--margin-left">
-          <use href="./images/icons.svg#icon-elipse"></use>
-        </svg>
-        <svg class="reviews__icon-elipse-large reviews__icon-elipse-large--margin-left">
-          <use href="./images/icons.svg#icon-elipse"></use>
-        </svg>
-      </div>
+      </button>
     </div>
   </div>
 </section>
+<script src="./js/reviews.js" defer></script>
