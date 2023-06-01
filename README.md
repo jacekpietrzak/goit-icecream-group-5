@@ -8,8 +8,6 @@ Team project GoIT Filmoteka by Group 3 :
  
       Jacek Pietrzak,
   
-      
-  
       Sebastian Jurewicz,
   
       
